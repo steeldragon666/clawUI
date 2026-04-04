@@ -1,0 +1,81 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - heading "OMNISCIENT AI" [level=1] [ref=e6]
+      - generic [ref=e7]: AGENT MISSION CONTROL
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - generic [ref=e10]: 7 ONLINE
+        - generic [ref=e12]: 4 WORKING
+        - generic [ref=e14]: 1 STALLED
+        - generic [ref=e16]: 1 ERROR
+      - generic [ref=e18]:
+        - generic [ref=e19]:
+          - generic [ref=e20]: ○ DISCONNECTED
+          - generic [ref=e21]: 22:52:55
+        - generic [ref=e22]: Sat, 04 Apr 2026
+  - generic [ref=e23]:
+    - generic [ref=e24]:
+      - heading "Live Agent Fleet" [level=2] [ref=e26]
+      - generic [ref=e28]: Initializing fleet telemetry...
+    - generic [ref=e29]:
+      - heading "Active Task Pipeline" [level=2] [ref=e31]
+      - generic [ref=e33]: Loading pipeline state...
+    - generic [ref=e34]:
+      - heading "Schedule Timeline" [level=2] [ref=e36]
+      - generic [ref=e38]:
+        - generic [ref=e39]:
+          - generic [ref=e41]: 22:52
+          - generic [ref=e44]: 23:52
+          - generic [ref=e47]: 00:52
+          - generic [ref=e50]: 01:52
+          - generic [ref=e53]: 02:52
+          - generic [ref=e56]: 02:52
+          - generic [ref=e59]: 03:52
+          - generic [ref=e62]: 04:52
+          - generic [ref=e65]: 05:52
+          - generic [ref=e68]: 06:52
+          - generic [ref=e71]: 07:52
+          - generic [ref=e74]: 08:52
+        - generic [ref=e76]:
+          - generic "Process morning inbox — active (P2)" [ref=e78] [cursor=pointer]:
+            - generic [ref=e79]: Process morning inbox
+          - generic "Post Q2 update to LinkedIn — active (P1)" [ref=e81] [cursor=pointer]:
+            - generic: Post Q2 update to LinkedIn
+          - 'generic "Instagram carousel: Summer collection — active (P2)" [ref=e83] [cursor=pointer]':
+            - generic [ref=e84]: "Instagram carousel: Summer collection"
+          - generic "Generate weekly content batch — queued (P3)" [ref=e86] [cursor=pointer]:
+            - generic [ref=e87]: Generate weekly content batch
+    - generic [ref=e88]:
+      - generic [ref=e89]:
+        - heading "Performance Metrics" [level=2] [ref=e91]
+        - generic [ref=e93]: Acquiring metrics...
+      - generic [ref=e94]:
+        - heading "Infrastructure & Capacity" [level=2] [ref=e96]
+        - generic [ref=e98]:
+          - generic [ref=e99]:
+            - generic [ref=e102]:
+              - generic [ref=e103]: CLUSTER CPU (AVG)
+              - generic [ref=e104]: 51%
+            - generic [ref=e109]:
+              - generic [ref=e110]: CLUSTER MEM (AVG)
+              - generic [ref=e111]: 45%
+          - generic [ref=e114]:
+            - generic [ref=e115]:
+              - generic [ref=e116]: ACTIVE NODES
+              - generic [ref=e117]: 8 / 9
+            - generic [ref=e118]:
+              - generic [ref=e119]: STALLED
+              - generic [ref=e120]: "1"
+            - generic [ref=e121]:
+              - generic [ref=e122]: OFFLINE
+              - generic [ref=e123]: "1"
+      - generic [ref=e124]:
+        - heading "Error & Alert Feed" [level=2] [ref=e126]
+        - generic [ref=e128]:
+          - generic [ref=e129]:
+            - button "ALL" [ref=e130]
+            - button "ERROR0" [ref=e131]
+            - button "WARN0" [ref=e132]
+            - button "INFO0" [ref=e133]
+          - generic [ref=e135]: NO ALERTS

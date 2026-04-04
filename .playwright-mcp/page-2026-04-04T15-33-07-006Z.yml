@@ -1,0 +1,53 @@
+- generic [ref=e3]:
+  - navigation [ref=e5]:
+    - link "Fleet" [ref=e6] [cursor=pointer]:
+      - /url: /
+      - img [ref=e8]
+      - generic: Fleet
+    - link "Pipeline" [ref=e10] [cursor=pointer]:
+      - /url: /pipeline
+      - img [ref=e11]
+      - generic: Pipeline
+    - link "Calendar" [ref=e12] [cursor=pointer]:
+      - /url: /calendar
+      - img [ref=e13]
+      - generic: Calendar
+    - link "Clients" [active] [ref=e15] [cursor=pointer]:
+      - /url: /clients
+      - img [ref=e16]
+      - generic: Clients
+    - link "Settings" [ref=e21] [cursor=pointer]:
+      - /url: /settings
+      - img [ref=e22]
+      - generic: Settings
+    - generic [ref=e25]: C
+  - banner [ref=e26]:
+    - generic [ref=e27]:
+      - generic [ref=e28]:
+        - generic [ref=e29]: Agents Online
+        - generic [ref=e30]: 43/50
+      - generic [ref=e31]:
+        - generic [ref=e32]: Tasks Active
+        - generic [ref=e33]: "30"
+      - generic [ref=e34]:
+        - generic [ref=e35]: Posts Today
+        - generic [ref=e36]: "65"
+      - generic [ref=e37]:
+        - generic [ref=e38]: Queue Depth
+        - generic [ref=e39]: "60"
+      - generic [ref=e40]:
+        - generic [ref=e41]: Error Rate
+        - generic [ref=e42]: 5.0%
+      - generic [ref=e43]:
+        - generic [ref=e44]: API Budget
+        - generic [ref=e45]: 34%
+    - generic [ref=e46]:
+      - generic [ref=e47]: 02:33:06
+      - button "45 unacknowledged alerts" [ref=e48]:
+        - img [ref=e49]
+        - generic [ref=e52]: "45"
+      - generic [ref=e55]: Offline
+  - main [ref=e56]:
+    - generic [ref=e1388]:
+      - generic [ref=e1389]: CLIENT MANAGEMENT
+      - generic [ref=e1390]: AVAILABLE IN BETA

@@ -1,10 +1,23 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { AppShell } from './components/layout/AppShell';
+import { FleetView } from './pages/FleetView';
+import { PipelineView } from './pages/PipelineView';
+import { CalendarView } from './pages/CalendarView';
+import { ClientsView } from './pages/ClientsView';
+import { SettingsView } from './pages/SettingsView';
+
 export function App() {
   return (
-    <div className="min-h-screen bg-void text-primary font-sans">
-      <h1 className="text-neon-cyan font-mono text-2xl p-8">
-        OMNISCIENT AI — AGENT MISSION CONTROL
-      </h1>
-      <p className="px-8 text-secondary">System initializing...</p>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<AppShell />}>
+          <Route path="/" element={<FleetView />} />
+          <Route path="/pipeline" element={<PipelineView />} />
+          <Route path="/calendar" element={<CalendarView />} />
+          <Route path="/clients" element={<ClientsView />} />
+          <Route path="/settings" element={<SettingsView />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }

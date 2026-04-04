@@ -1,0 +1,453 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - heading "OMNISCIENT AI" [level=1] [ref=e6]
+      - generic [ref=e7]: AGENT MISSION CONTROL
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - generic [ref=e10]: 7 ONLINE
+        - generic [ref=e12]: 4 WORKING
+        - generic [ref=e14]: 1 STALLED
+        - generic [ref=e16]: 1 ERROR
+      - generic [ref=e18]:
+        - generic [ref=e19]:
+          - generic [ref=e20]: ○ DISCONNECTED
+          - generic [ref=e21]: 23:03:13
+        - generic [ref=e22]: Sat, 04 Apr 2026
+  - generic [ref=e23]:
+    - generic [ref=e24]:
+      - heading "Live Agent Fleet" [level=2] [ref=e26]
+      - generic [ref=e27]:
+        - generic [ref=e28]:
+          - generic [ref=e137]:
+            - generic [ref=e138]:
+              - generic [ref=e139]: "Server-ID: server-1"
+              - generic [ref=e141]: 3 agents
+            - generic [ref=e142]:
+              - generic [ref=e143] [cursor=pointer]:
+                - generic [ref=e144]:
+                  - generic [ref=e145]:
+                    - heading "sensor-mon-01" [level=3] [ref=e148]
+                    - generic [ref=e149]: sensor-monitor
+                  - generic [ref=e150]: working
+                - generic [ref=e151]:
+                  - generic [ref=e153]:
+                    - generic [ref=e154]: CPU
+                    - generic [ref=e155]: 45%
+                  - generic [ref=e159]:
+                    - generic [ref=e160]: MEM
+                    - generic [ref=e161]: 38%
+                - generic [ref=e164]:
+                  - generic [ref=e165]: "TASKS: 2201"
+                  - generic [ref=e166]: "Q: 1"
+                - generic [ref=e167]:
+                  - button "PAUSE" [ref=e168]
+                  - button "KILL" [ref=e169]
+                  - button "DETAIL" [active] [ref=e170]
+              - generic [ref=e171] [cursor=pointer]:
+                - generic [ref=e172]:
+                  - generic [ref=e173]:
+                    - heading "climate-ctrl-01" [level=3] [ref=e176]
+                    - generic [ref=e177]: climate-control
+                  - generic [ref=e178]: idle
+                - generic [ref=e179]:
+                  - generic [ref=e181]:
+                    - generic [ref=e182]: CPU
+                    - generic [ref=e183]: 12%
+                  - generic [ref=e187]:
+                    - generic [ref=e188]: MEM
+                    - generic [ref=e189]: 22%
+                - generic [ref=e192]:
+                  - generic [ref=e193]: "TASKS: 890"
+                  - generic [ref=e194]: "Q: 0"
+                - generic [ref=e195]:
+                  - button "PAUSE" [ref=e196]
+                  - button "KILL" [ref=e197]
+                  - button "DETAIL" [ref=e198]
+              - generic [ref=e199] [cursor=pointer]:
+                - generic [ref=e200]:
+                  - generic [ref=e201]:
+                    - heading "irrigation-01" [level=3] [ref=e204]
+                    - generic [ref=e205]: irrigation
+                  - generic [ref=e206]: idle
+                - generic [ref=e207]:
+                  - generic [ref=e209]:
+                    - generic [ref=e210]: CPU
+                    - generic [ref=e211]: 8%
+                  - generic [ref=e215]:
+                    - generic [ref=e216]: MEM
+                    - generic [ref=e217]: 18%
+                - generic [ref=e220]:
+                  - generic [ref=e221]: "TASKS: 445"
+                  - generic [ref=e222]: "Q: 0"
+                - generic [ref=e223]:
+                  - button "PAUSE" [ref=e224]
+                  - button "KILL" [ref=e225]
+                  - button "DETAIL" [ref=e226]
+          - generic [ref=e227]:
+            - generic [ref=e228]:
+              - generic [ref=e229]: "Server-ID: server-2"
+              - generic [ref=e231]: 4 agents
+            - generic [ref=e232]:
+              - generic [ref=e233] [cursor=pointer]:
+                - generic [ref=e234]:
+                  - generic [ref=e235]:
+                    - heading "acme-email-01" [level=3] [ref=e238]
+                    - generic [ref=e239]: email-filter
+                  - generic [ref=e240]: working
+                - generic [ref=e241]:
+                  - generic [ref=e243]:
+                    - generic [ref=e244]: CPU
+                    - generic [ref=e245]: 65%
+                  - generic [ref=e249]:
+                    - generic [ref=e250]: MEM
+                    - generic [ref=e251]: 42%
+                - generic [ref=e254]:
+                  - generic [ref=e255]: "TASKS: 1045"
+                  - generic [ref=e256]: "Q: 3"
+                - generic [ref=e257]:
+                  - button "PAUSE" [ref=e258]
+                  - button "KILL" [ref=e259]
+                  - button "DETAIL" [ref=e260]
+              - generic [ref=e261] [cursor=pointer]:
+                - generic [ref=e262]:
+                  - generic [ref=e263]:
+                    - heading "acme-social-01" [level=3] [ref=e266]
+                    - generic [ref=e267]: social-post
+                  - generic [ref=e268]: working
+                - generic [ref=e269]:
+                  - generic [ref=e271]:
+                    - generic [ref=e272]: CPU
+                    - generic [ref=e273]: 72%
+                  - generic [ref=e277]:
+                    - generic [ref=e278]: MEM
+                    - generic [ref=e279]: 55%
+                - generic [ref=e282]:
+                  - generic [ref=e283]: "TASKS: 567"
+                  - generic [ref=e284]: "Q: 5"
+                - generic [ref=e285]:
+                  - button "PAUSE" [ref=e286]
+                  - button "KILL" [ref=e287]
+                  - button "DETAIL" [ref=e288]
+              - generic [ref=e289] [cursor=pointer]:
+                - generic [ref=e290]:
+                  - generic [ref=e291]:
+                    - heading "acme-seo-01" [level=3] [ref=e294]
+                    - generic [ref=e295]: seo-optimize
+                  - generic [ref=e296]: error
+                - generic [ref=e297]:
+                  - generic [ref=e299]:
+                    - generic [ref=e300]: CPU
+                    - generic [ref=e301]: 98%
+                  - generic [ref=e305]:
+                    - generic [ref=e306]: MEM
+                    - generic [ref=e307]: 88%
+                - generic [ref=e310]:
+                  - generic [ref=e311]: "TASKS: 231"
+                  - generic [ref=e312]: "Q: 12"
+                - generic [ref=e313]:
+                  - button "PAUSE" [ref=e314]
+                  - button "KILL" [ref=e315]
+                  - button "DETAIL" [ref=e316]
+              - generic [ref=e317] [cursor=pointer]:
+                - generic [ref=e318]:
+                  - generic [ref=e319]:
+                    - heading "acme-content-01" [level=3] [ref=e322]
+                    - generic [ref=e323]: content-gen
+                  - generic [ref=e324]: idle
+                - generic [ref=e325]:
+                  - generic [ref=e327]:
+                    - generic [ref=e328]: CPU
+                    - generic [ref=e329]: 15%
+                  - generic [ref=e333]:
+                    - generic [ref=e334]: MEM
+                    - generic [ref=e335]: 28%
+                - generic [ref=e338]:
+                  - generic [ref=e339]: "TASKS: 89"
+                  - generic [ref=e340]: "Q: 0"
+                - generic [ref=e341]:
+                  - button "PAUSE" [ref=e342]
+                  - button "KILL" [ref=e343]
+                  - button "DETAIL" [ref=e344]
+          - generic [ref=e345]:
+            - generic [ref=e346]:
+              - generic [ref=e347]: "Server-ID: server-3"
+              - generic [ref=e349]: 2 agents
+            - generic [ref=e350]:
+              - generic [ref=e351] [cursor=pointer]:
+                - generic [ref=e352]:
+                  - generic [ref=e353]:
+                    - heading "brandx-social-01" [level=3] [ref=e356]
+                    - generic [ref=e357]: social-post
+                  - generic [ref=e358]: working
+                - generic [ref=e359]:
+                  - generic [ref=e361]:
+                    - generic [ref=e362]: CPU
+                    - generic [ref=e363]: 58%
+                  - generic [ref=e367]:
+                    - generic [ref=e368]: MEM
+                    - generic [ref=e369]: 44%
+                - generic [ref=e372]:
+                  - generic [ref=e373]: "TASKS: 312"
+                  - generic [ref=e374]: "Q: 2"
+                - generic [ref=e375]:
+                  - button "PAUSE" [ref=e376]
+                  - button "KILL" [ref=e377]
+                  - button "DETAIL" [ref=e378]
+              - generic [ref=e379] [cursor=pointer]:
+                - generic [ref=e380]:
+                  - generic [ref=e381]:
+                    - heading "brandx-content-01" [level=3] [ref=e384]
+                    - generic [ref=e385]: content-gen
+                  - generic [ref=e386]: stalled
+                - generic [ref=e387]:
+                  - generic [ref=e389]:
+                    - generic [ref=e390]: CPU
+                    - generic [ref=e391]: 82%
+                  - generic [ref=e395]:
+                    - generic [ref=e396]: MEM
+                    - generic [ref=e397]: 71%
+                - generic [ref=e400]:
+                  - generic [ref=e401]: "TASKS: 44"
+                  - generic [ref=e402]: "Q: 8"
+                - generic [ref=e403]:
+                  - button "PAUSE" [ref=e404]
+                  - button "KILL" [ref=e405]
+                  - button "DETAIL" [ref=e406]
+        - generic [ref=e563]:
+          - generic [ref=e564]:
+            - generic [ref=e567]:
+              - heading "sensor-mon-01" [level=2] [ref=e568]
+              - text: sensor-monitor
+            - generic [ref=e569]:
+              - generic [ref=e570]: working
+              - button "ESC" [ref=e571]
+          - generic [ref=e572]:
+            - button "PAUSE" [ref=e573]
+            - button "RESTART" [ref=e574]
+            - button "KILL" [ref=e575]
+          - generic [ref=e576]:
+            - heading "RESOURCE CONSUMPTION" [level=3] [ref=e577]
+            - generic [ref=e578]:
+              - generic [ref=e579]:
+                - generic [ref=e581]:
+                  - generic [ref=e582]: CPU
+                  - generic [ref=e583]: 45%
+                - text: NO DATA
+              - generic [ref=e586]:
+                - generic [ref=e588]:
+                  - generic [ref=e589]: MEMORY
+                  - generic [ref=e590]: 38%
+                - text: NO DATA
+          - generic [ref=e593]:
+            - generic [ref=e594]:
+              - generic [ref=e595]: TASKS COMPLETED
+              - generic [ref=e596]: "2201"
+            - generic [ref=e597]:
+              - generic [ref=e598]: QUEUE DEPTH
+              - generic [ref=e599]: "1"
+            - generic [ref=e600]:
+              - generic [ref=e601]: HEARTBEATS
+              - generic [ref=e602]: "0"
+          - generic [ref=e603]:
+            - heading "AGENT INFO" [level=3] [ref=e604]
+            - generic [ref=e605]:
+              - generic [ref=e606]:
+                - generic [ref=e607]: ID
+                - generic [ref=e608]: agent-1
+              - generic [ref=e609]:
+                - generic [ref=e610]: Server
+                - generic [ref=e611]: server-1
+              - generic [ref=e612]:
+                - generic [ref=e613]: Tenant
+                - generic [ref=e614]: tenant-gh
+              - generic [ref=e615]:
+                - generic [ref=e616]: Last Heartbeat
+                - generic [ref=e617]: 22:56:31
+          - generic [ref=e618]:
+            - heading "TASK HISTORY (0)" [level=3] [ref=e619]
+            - generic [ref=e621]: NO TASKS ASSIGNED
+    - generic [ref=e29]:
+      - heading "Active Task Pipeline" [level=2] [ref=e31]
+      - generic [ref=e33]:
+        - generic [ref=e407]:
+          - generic [ref=e408]:
+            - generic [ref=e409]: QUEUED
+            - generic [ref=e410]: "3"
+          - generic [ref=e411]:
+            - generic [ref=e412] [cursor=pointer]:
+              - generic [ref=e413]:
+                - 'heading "Blog: AI Trends Q2 2026" [level=4] [ref=e414]'
+                - generic [ref=e415]: P1
+              - paragraph [ref=e416]: Draft 1500-word blog post on AI trends
+              - generic [ref=e417]:
+                - generic [ref=e418]: blog-draft
+                - generic [ref=e419]: UNASSIGNED
+            - generic [ref=e420] [cursor=pointer]:
+              - generic [ref=e421]:
+                - heading "Generate weekly content batch" [level=4] [ref=e422]
+                - generic [ref=e423]: P3
+              - paragraph [ref=e424]: Produce 10 posts for next week
+              - generic [ref=e425]:
+                - generic [ref=e426]: content-gen
+                - generic [ref=e427]: UNASSIGNED
+            - generic [ref=e428] [cursor=pointer]:
+              - generic [ref=e429]:
+                - 'heading "SEO audit: acmecorp.com" [level=4] [ref=e430]'
+                - generic [ref=e431]: P2
+              - paragraph [ref=e432]: Full site audit with recommendations
+              - generic [ref=e433]:
+                - generic [ref=e434]: seo-audit
+                - generic [ref=e435]: UNASSIGNED
+        - generic [ref=e436]:
+          - generic [ref=e437]:
+            - generic [ref=e438]: ACTIVE
+            - generic [ref=e440]: "3"
+          - generic [ref=e441]:
+            - generic [ref=e442] [cursor=pointer]:
+              - generic [ref=e443]:
+                - heading "Process morning inbox" [level=4] [ref=e444]
+                - generic [ref=e445]: P2
+              - paragraph [ref=e446]: Filter and summarize 50 emails
+              - generic [ref=e447]:
+                - generic [ref=e448]: email-batch
+                - generic [ref=e449]: agent*
+            - generic [ref=e450] [cursor=pointer]:
+              - generic [ref=e451]:
+                - heading "Post Q2 update to LinkedIn" [level=4] [ref=e452]
+                - generic [ref=e453]: P1
+              - paragraph [ref=e454]: Publish quarterly update with charts
+              - generic [ref=e455]:
+                - generic [ref=e456]: social-post
+                - generic [ref=e457]: agent*
+            - generic [ref=e458] [cursor=pointer]:
+              - generic [ref=e459]:
+                - 'heading "Instagram carousel: Summer collection" [level=4] [ref=e460]'
+                - generic [ref=e461]: P2
+              - paragraph [ref=e462]: Create 5-image carousel post
+              - generic [ref=e463]:
+                - generic [ref=e464]: social-post
+                - generic [ref=e465]: agent*
+        - generic [ref=e466]:
+          - generic [ref=e467]:
+            - generic [ref=e468]: APPROVAL
+            - generic [ref=e469]: "1"
+          - generic [ref=e471] [cursor=pointer]:
+            - generic [ref=e472]:
+              - 'heading "Twitter thread: Product launch" [level=4] [ref=e473]'
+              - generic [ref=e474]: P2
+            - paragraph [ref=e475]: 5-tweet thread for new product
+            - generic [ref=e476]:
+              - generic [ref=e477]: social-post
+              - generic [ref=e478]: agent*
+        - generic [ref=e479]:
+          - generic [ref=e480]:
+            - generic [ref=e481]: DONE
+            - generic [ref=e482]: "2"
+          - generic [ref=e483]:
+            - generic [ref=e484] [cursor=pointer]:
+              - generic [ref=e485]:
+                - heading "Hourly sensor reading" [level=4] [ref=e486]
+                - generic [ref=e487]: P3
+              - paragraph [ref=e488]: Read humidity, temperature, soil moisture
+              - generic [ref=e489]:
+                - generic [ref=e490]: sensor-read
+                - generic [ref=e491]: agent*
+            - generic [ref=e492] [cursor=pointer]:
+              - generic [ref=e493]:
+                - heading "Process afternoon inbox" [level=4] [ref=e494]
+                - generic [ref=e495]: P2
+              - paragraph [ref=e496]: Filter and summarize 35 emails
+              - generic [ref=e497]:
+                - generic [ref=e498]: email-batch
+                - generic [ref=e499]: agent*
+        - generic [ref=e500]:
+          - generic [ref=e501]:
+            - generic [ref=e502]: FAILED
+            - generic [ref=e503]: "1"
+          - generic [ref=e505] [cursor=pointer]:
+            - generic [ref=e506]:
+              - 'heading "SEO audit: blog section" [level=4] [ref=e507]'
+              - generic [ref=e508]: P2
+            - paragraph [ref=e509]: Crawl failed — timeout on blog pages
+            - generic [ref=e510]: RETRIED 3/3
+            - generic [ref=e511]:
+              - generic [ref=e512]: seo-audit
+              - generic [ref=e513]: agent*
+    - generic [ref=e34]:
+      - heading "Schedule Timeline" [level=2] [ref=e36]
+      - generic [ref=e38]:
+        - generic [ref=e39]:
+          - generic [ref=e41]: 22:56
+          - generic [ref=e44]: 23:56
+          - generic [ref=e47]: 00:56
+          - generic [ref=e50]: 01:56
+          - generic [ref=e53]: 02:56
+          - generic [ref=e56]: 02:56
+          - generic [ref=e59]: 03:56
+          - generic [ref=e62]: 04:56
+          - generic [ref=e65]: 05:56
+          - generic [ref=e68]: 06:56
+          - generic [ref=e71]: 07:56
+          - generic [ref=e74]: 08:56
+        - generic [ref=e76]:
+          - generic "Process morning inbox — active (P2)" [ref=e78] [cursor=pointer]:
+            - generic [ref=e79]: Process morning inbox
+          - generic "Post Q2 update to LinkedIn — active (P1)" [ref=e81] [cursor=pointer]:
+            - generic [ref=e82]: Post Q2 update to LinkedIn
+          - 'generic "Instagram carousel: Summer collection — active (P2)" [ref=e84] [cursor=pointer]':
+            - generic [ref=e85]: "Instagram carousel: Summer collection"
+          - generic "Generate weekly content batch — queued (P3)" [ref=e87] [cursor=pointer]:
+            - generic [ref=e88]: Generate weekly content batch
+    - generic [ref=e89]:
+      - generic [ref=e90]:
+        - heading "Performance Metrics" [level=2] [ref=e92]
+        - generic [ref=e94]:
+          - generic [ref=e514]:
+            - generic [ref=e515]:
+              - generic [ref=e517]: COMPLETIONS (24H)
+              - generic [ref=e518]: "0"
+              - generic [ref=e519]: TOTAL DONE
+            - generic [ref=e520]:
+              - generic [ref=e522]: THROUGHPUT
+              - generic [ref=e523]: 0/hr
+              - generic [ref=e524]: CURRENT HOUR
+          - generic [ref=e525]:
+            - generic [ref=e526]:
+              - generic [ref=e528]: FAILURE RATE
+              - generic [ref=e529]: 0.0%
+              - generic [ref=e530]: LAST 24H
+            - generic [ref=e531]:
+              - generic [ref=e533]: AVG DURATION
+              - generic [ref=e534]: 0s
+              - generic [ref=e535]: PER TASK
+          - generic [ref=e536]: 24H COMPLETIONS TREND
+      - generic [ref=e95]:
+        - heading "Infrastructure & Capacity" [level=2] [ref=e97]
+        - generic [ref=e99]:
+          - generic [ref=e100]:
+            - generic [ref=e103]:
+              - generic [ref=e104]: CLUSTER CPU (AVG)
+              - generic [ref=e105]: 51%
+            - generic [ref=e110]:
+              - generic [ref=e111]: CLUSTER MEM (AVG)
+              - generic [ref=e112]: 45%
+          - generic [ref=e115]:
+            - generic [ref=e116]:
+              - generic [ref=e117]: ACTIVE NODES
+              - generic [ref=e118]: 8 / 9
+            - generic [ref=e119]:
+              - generic [ref=e120]: STALLED
+              - generic [ref=e121]: "1"
+            - generic [ref=e122]:
+              - generic [ref=e123]: OFFLINE
+              - generic [ref=e124]: "1"
+      - generic [ref=e125]:
+        - heading "Error & Alert Feed" [level=2] [ref=e127]
+        - generic [ref=e129]:
+          - generic [ref=e130]:
+            - button "ALL" [ref=e131]
+            - button "ERROR0" [ref=e132]
+            - button "WARN0" [ref=e133]
+            - button "INFO0" [ref=e134]
+          - generic [ref=e136]: NO ALERTS

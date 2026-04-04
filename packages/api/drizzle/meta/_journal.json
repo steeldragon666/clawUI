@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1775289826480,
+      "tag": "0000_aberrant_colleen_wing",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1775289826481,
+      "tag": "0001_timescale_setup",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1775376226480,
+      "tag": "0002_content_platform_tables",
+      "breakpoints": true
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+/* Pulse — slow (idle) */
+@keyframes pulse-slow {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
+
+/* Pulse — fast (needs attention) */
+@keyframes pulse-fast {
+  0%, 100% { opacity: 0.5; box-shadow: 0 0 5px rgba(255, 170, 0, 0.2); }
+  50% { opacity: 1; box-shadow: 0 0 15px rgba(255, 170, 0, 0.6); }
+}
+
+/* Flash border (error) */
+@keyframes flash-border {
+  0%, 100% { box-shadow: 0 0 5px rgba(255, 0, 170, 0.3); }
+  50% { box-shadow: 0 0 20px rgba(255, 0, 170, 0.8); }
+}
+
+/* Flatline (dead) */
+@keyframes flatline {
+  0% { opacity: 1; }
+  49% { opacity: 1; }
+  50% { opacity: 0.2; }
+  100% { opacity: 0.2; }
+}
+
+/* Data flash — applied when a value changes */
+@keyframes data-flash {
+  0% { background-color: rgba(255, 170, 0, 0.3); }
+  100% { background-color: transparent; }
+}
+
+.data-flash {
+  animation: data-flash 200ms ease-out;
+}
+
+/* Neon text glow */
+@keyframes text-glow {
+  0%, 100% { text-shadow: 0 0 4px currentColor; }
+  50% { text-shadow: 0 0 12px currentColor, 0 0 20px currentColor; }
+}
+
+/* Slide in from right (for alerts) */
+@keyframes slide-in-right {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+.animate-slide-in {
+  animation: slide-in-right 300ms ease-out;
+}

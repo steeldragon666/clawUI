@@ -1,0 +1,23 @@
+{
+  "name": "@omniscient/worker",
+  "version": "1.0.0",
+  "description": "Agent Mission Control Node execution runner",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@omniscient/shared": "workspace:*",
+    "dotenv": "^16.4.5",
+    "ioredis": "^5.3.2",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/uuid": "^9.0.7",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  }
+}

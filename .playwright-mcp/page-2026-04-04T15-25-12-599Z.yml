@@ -1,0 +1,1500 @@
+- generic [ref=e3]:
+  - navigation [ref=e5]:
+    - link "Fleet" [ref=e6] [cursor=pointer]:
+      - /url: /
+      - img [ref=e7]
+      - generic: Fleet
+    - link "Pipeline" [ref=e9] [cursor=pointer]:
+      - /url: /pipeline
+      - img [ref=e11]
+      - generic: Pipeline
+    - link "Calendar" [ref=e12] [cursor=pointer]:
+      - /url: /calendar
+      - img [ref=e13]
+      - generic: Calendar
+    - link "Clients" [ref=e15] [cursor=pointer]:
+      - /url: /clients
+      - img [ref=e16]
+      - generic: Clients
+    - link "Settings" [ref=e21] [cursor=pointer]:
+      - /url: /settings
+      - img [ref=e22]
+      - generic: Settings
+    - generic [ref=e25]: C
+  - banner [ref=e26]:
+    - generic [ref=e27]:
+      - generic [ref=e28]:
+        - generic [ref=e29]: Agents Online
+        - generic [ref=e30]: 43/50
+      - generic [ref=e31]:
+        - generic [ref=e32]: Tasks Active
+        - generic [ref=e33]: "30"
+      - generic [ref=e34]:
+        - generic [ref=e35]: Posts Today
+        - generic [ref=e36]: "65"
+      - generic [ref=e37]:
+        - generic [ref=e38]: Queue Depth
+        - generic [ref=e39]: "60"
+      - generic [ref=e40]:
+        - generic [ref=e41]: Error Rate
+        - generic [ref=e42]: 5.0%
+      - generic [ref=e43]:
+        - generic [ref=e44]: API Budget
+        - generic [ref=e45]: 34%
+    - generic [ref=e46]:
+      - generic [ref=e47]: 02:25:12
+      - button "45 unacknowledged alerts" [ref=e48]:
+        - img [ref=e49]
+        - generic [ref=e52]: "45"
+      - generic [ref=e55]: Offline
+  - main [ref=e56]:
+    - generic [ref=e57]:
+      - generic [ref=e59]:
+        - generic [ref=e61]:
+          - generic [ref=e62]: QUEUED
+          - generic [ref=e63]:
+            - generic [ref=e64]: 12/hr
+            - generic [ref=e65]: "25"
+        - generic [ref=e67]:
+          - generic [ref=e68] [cursor=pointer]:
+            - generic [ref=e69]: client-10
+            - generic [ref=e70]: "Linkedin: Your audience doesn't want more content. They want m…"
+            - generic [ref=e71]:
+              - generic "linkedin" [ref=e72]: 💼
+              - generic [ref=e73]: UNASSIGNED
+              - generic [ref=e74]: 11h
+          - generic [ref=e75] [cursor=pointer]:
+            - generic [ref=e76]: client-10
+            - generic [ref=e77]: "Linkedin: Your audience doesn't want more content. They want m…"
+            - generic [ref=e78]:
+              - generic "linkedin" [ref=e79]: 💼
+              - generic [ref=e80]: UNASSIGNED
+              - generic [ref=e81]: 12h
+          - generic [ref=e82] [cursor=pointer]:
+            - generic [ref=e83]: client-10
+            - generic [ref=e84]: "Linkedin: Your audience doesn't want more content. They want m…"
+            - generic [ref=e85]:
+              - generic "linkedin" [ref=e86]: 💼
+              - generic [ref=e87]: UNASSIGNED
+              - generic [ref=e88]: 12h
+          - generic [ref=e89] [cursor=pointer]:
+            - generic [ref=e90]: client-10
+            - generic [ref=e91]: "Facebook: What's the one tool you can't run your business with…"
+            - generic [ref=e92]:
+              - generic "facebook" [ref=e93]: 📘
+              - generic [ref=e94]: UNASSIGNED
+              - generic [ref=e95]: 12h
+          - generic [ref=e96] [cursor=pointer]:
+            - generic [ref=e97]: client-10
+            - generic [ref=e98]: "Facebook: What's the one tool you can't run your business with…"
+            - generic [ref=e99]:
+              - generic "facebook" [ref=e100]: 📘
+              - generic [ref=e101]: UNASSIGNED
+              - generic [ref=e102]: 13h
+          - generic [ref=e103] [cursor=pointer]:
+            - generic [ref=e104]: client-10
+            - generic [ref=e105]: "Facebook: What's the one tool you can't run your business with…"
+            - generic [ref=e106]:
+              - generic "facebook" [ref=e107]: 📘
+              - generic [ref=e108]: UNASSIGNED
+              - generic [ref=e109]: 13h
+          - generic [ref=e110] [cursor=pointer]:
+            - generic [ref=e111]: client-11
+            - generic [ref=e112]: "Facebook: We asked our community what they struggle with most.…"
+            - generic [ref=e113]:
+              - generic "facebook" [ref=e114]: 📘
+              - generic [ref=e115]: UNASSIGNED
+              - generic [ref=e116]: 13h
+          - generic [ref=e117] [cursor=pointer]:
+            - generic [ref=e118]: client-11
+            - generic [ref=e119]: "Facebook: We asked our community what they struggle with most.…"
+            - generic [ref=e120]:
+              - generic "facebook" [ref=e121]: 📘
+              - generic [ref=e122]: UNASSIGNED
+              - generic [ref=e123]: 14h
+          - generic [ref=e124] [cursor=pointer]:
+            - generic [ref=e125]: client-11
+            - generic [ref=e126]: "Facebook: We asked our community what they struggle with most.…"
+            - generic [ref=e127]:
+              - generic "facebook" [ref=e128]: 📘
+              - generic [ref=e129]: UNASSIGNED
+              - generic [ref=e130]: 14h
+          - generic [ref=e131] [cursor=pointer]:
+            - generic [ref=e132]: client-11
+            - generic [ref=e133]: "Facebook: Hot take: most brand content is too polished. Real,…"
+            - generic [ref=e134]:
+              - generic "facebook" [ref=e135]: 📘
+              - generic [ref=e136]: UNASSIGNED
+              - generic [ref=e137]: 14h
+          - generic [ref=e138] [cursor=pointer]:
+            - generic [ref=e139]: client-11
+            - generic [ref=e140]: "Facebook: Hot take: most brand content is too polished. Real,…"
+            - generic [ref=e141]:
+              - generic "facebook" [ref=e142]: 📘
+              - generic [ref=e143]: UNASSIGNED
+              - generic [ref=e144]: 15h
+          - generic [ref=e145] [cursor=pointer]:
+            - generic [ref=e146]: client-11
+            - generic [ref=e147]: "Instagram: Hot take: most brand content is too polished. Real,…"
+            - generic [ref=e148]:
+              - generic "instagram" [ref=e149]: 📷
+              - generic [ref=e150]: UNASSIGNED
+              - generic [ref=e151]: 15h
+          - generic [ref=e152] [cursor=pointer]:
+            - generic [ref=e153]: client-11
+            - generic [ref=e154]: "Instagram: Two truths and a lie about social media marketing. C…"
+            - generic [ref=e155]:
+              - generic "instagram" [ref=e156]: 📷
+              - generic [ref=e157]: UNASSIGNED
+              - generic [ref=e158]: 15h
+          - generic [ref=e159] [cursor=pointer]:
+            - generic [ref=e160]: client-11
+            - generic [ref=e161]: "Instagram: Two truths and a lie about social media marketing. C…"
+            - generic [ref=e162]:
+              - generic "instagram" [ref=e163]: 📷
+              - generic [ref=e164]: UNASSIGNED
+              - generic [ref=e165]: 16h
+          - generic [ref=e166] [cursor=pointer]:
+            - generic [ref=e167]: client-11
+            - generic [ref=e168]: "Instagram: Two truths and a lie about social media marketing. C…"
+            - generic [ref=e169]:
+              - generic "instagram" [ref=e170]: 📷
+              - generic [ref=e171]: UNASSIGNED
+              - generic [ref=e172]: 16h
+          - generic [ref=e173] [cursor=pointer]:
+            - generic [ref=e174]: client-12
+            - generic [ref=e175]: "Instagram: Tag a colleague who would actually read a 2,000-word…"
+            - generic [ref=e176]:
+              - generic "instagram" [ref=e177]: 📷
+              - generic [ref=e178]: UNASSIGNED
+              - generic [ref=e179]: 16h
+          - generic [ref=e180] [cursor=pointer]:
+            - generic [ref=e181]: client-12
+            - generic [ref=e182]: "Instagram: Tag a colleague who would actually read a 2,000-word…"
+            - generic [ref=e183]:
+              - generic "instagram" [ref=e184]: 📷
+              - generic [ref=e185]: UNASSIGNED
+              - generic [ref=e186]: 17h
+          - generic [ref=e187] [cursor=pointer]:
+            - generic [ref=e188]: client-12
+            - generic [ref=e189]: "X: Tag a colleague who would actually read a 2,000-word…"
+            - generic [ref=e190]:
+              - generic "x" [ref=e191]: 🐦
+              - generic [ref=e192]: UNASSIGNED
+              - generic [ref=e193]: 17h
+          - generic [ref=e194] [cursor=pointer]:
+            - generic [ref=e195]: client-12
+            - generic [ref=e196]: "X: We're curious — how many platforms is your team acti…"
+            - generic [ref=e197]:
+              - generic "x" [ref=e198]: 🐦
+              - generic [ref=e199]: UNASSIGNED
+              - generic [ref=e200]: 17h
+          - generic [ref=e201] [cursor=pointer]:
+            - generic [ref=e202]: client-12
+            - generic [ref=e203]: "X: We're curious — how many platforms is your team acti…"
+            - generic [ref=e204]:
+              - generic "x" [ref=e205]: 🐦
+              - generic [ref=e206]: UNASSIGNED
+              - generic [ref=e207]: 18h
+          - generic [ref=e208] [cursor=pointer]:
+            - generic [ref=e209]: client-12
+            - generic [ref=e210]: "X: We're curious — how many platforms is your team acti…"
+            - generic [ref=e211]:
+              - generic "x" [ref=e212]: 🐦
+              - generic [ref=e213]: UNASSIGNED
+              - generic [ref=e214]: 18h
+          - generic [ref=e215] [cursor=pointer]:
+            - generic [ref=e216]: client-12
+            - generic [ref=e217]: "X: We're curious — how many platforms is your team acti…"
+            - generic [ref=e218]:
+              - generic "x" [ref=e219]: 🐦
+              - generic [ref=e220]: UNASSIGNED
+              - generic [ref=e221]: 18h
+          - generic [ref=e222] [cursor=pointer]:
+            - generic [ref=e223]: client-12
+            - generic [ref=e224]: "X: We're excited to announce our partnership with one o…"
+            - generic [ref=e225]:
+              - generic "x" [ref=e226]: 🐦
+              - generic [ref=e227]: UNASSIGNED
+              - generic [ref=e228]: 19h
+          - generic [ref=e229] [cursor=pointer]:
+            - generic [ref=e230]: client-12
+            - generic [ref=e231]: "X: We're excited to announce our partnership with one o…"
+            - generic [ref=e232]:
+              - generic "x" [ref=e233]: 🐦
+              - generic [ref=e234]: UNASSIGNED
+              - generic [ref=e235]: 19h
+          - generic [ref=e236] [cursor=pointer]:
+            - generic [ref=e237]: client-13
+            - generic [ref=e238]: "X: We're excited to announce our partnership with one o…"
+            - generic [ref=e239]:
+              - generic "x" [ref=e240]: 🐦
+              - generic [ref=e241]: UNASSIGNED
+              - generic [ref=e242]: 19h
+      - generic [ref=e244]:
+        - generic [ref=e246]:
+          - generic [ref=e247]: IN PROGRESS
+          - generic [ref=e248]:
+            - generic [ref=e249]: 28/hr
+            - generic [ref=e250]: "30"
+        - generic [ref=e252]:
+          - generic [ref=e253] [cursor=pointer]:
+            - generic [ref=e254]: client-13
+            - generic [ref=e255]: "X: Our Q2 results are in. Growth across every channel,…"
+            - generic [ref=e256]:
+              - generic "x" [ref=e257]: 🐦
+              - generic [ref=e258]: agent-26
+              - generic [ref=e259]: 20h
+          - generic [ref=e260] [cursor=pointer]:
+            - generic [ref=e261]: client-13
+            - generic [ref=e262]: "X: Our Q2 results are in. Growth across every channel,…"
+            - generic [ref=e263]:
+              - generic "x" [ref=e264]: 🐦
+              - generic [ref=e265]: agent-27
+              - generic [ref=e266]: 20h
+          - generic [ref=e267] [cursor=pointer]:
+            - generic [ref=e268]: client-13
+            - generic [ref=e269]: "Linkedin: Our Q2 results are in. Growth across every channel,…"
+            - generic [ref=e270]:
+              - generic "linkedin" [ref=e271]: 💼
+              - generic [ref=e272]: agent-28
+              - generic [ref=e273]: 20h
+          - generic [ref=e274] [cursor=pointer]:
+            - generic [ref=e275]: client-13
+            - generic [ref=e276]: "Linkedin: Huge milestone: we just crossed 10,000 active users.…"
+            - generic [ref=e277]:
+              - generic "linkedin" [ref=e278]: 💼
+              - generic [ref=e279]: agent-29
+              - generic [ref=e280]: 21h
+          - generic [ref=e281] [cursor=pointer]:
+            - generic [ref=e282]: client-13
+            - generic [ref=e283]: "Linkedin: Huge milestone: we just crossed 10,000 active users.…"
+            - generic [ref=e284]:
+              - generic "linkedin" [ref=e285]: 💼
+              - generic [ref=e286]: agent-30
+              - generic [ref=e287]: 21h
+          - generic [ref=e288] [cursor=pointer]:
+            - generic [ref=e289]: client-13
+            - generic [ref=e290]: "Linkedin: Huge milestone: we just crossed 10,000 active users.…"
+            - generic [ref=e291]:
+              - generic "linkedin" [ref=e292]: 💼
+              - generic [ref=e293]: agent-31
+              - generic [ref=e294]: 22h
+          - generic [ref=e295] [cursor=pointer]:
+            - generic [ref=e296]: client-13
+            - generic [ref=e297]: "Linkedin: We're hiring. If you're passionate about building th…"
+            - generic [ref=e298]:
+              - generic "linkedin" [ref=e299]: 💼
+              - generic [ref=e300]: agent-32
+              - generic [ref=e301]: 22h
+          - generic [ref=e302] [cursor=pointer]:
+            - generic [ref=e303]: client-13
+            - generic [ref=e304]: "Linkedin: We're hiring. If you're passionate about building th…"
+            - generic [ref=e305]:
+              - generic "linkedin" [ref=e306]: 💼
+              - generic [ref=e307]: agent-33
+              - generic [ref=e308]: 22h
+          - generic [ref=e309] [cursor=pointer]:
+            - generic [ref=e310]: client-14
+            - generic [ref=e311]: "Linkedin: We're hiring. If you're passionate about building th…"
+            - generic [ref=e312]:
+              - generic "linkedin" [ref=e313]: 💼
+              - generic [ref=e314]: agent-34
+              - generic [ref=e315]: 23h
+          - generic [ref=e316] [cursor=pointer]:
+            - generic [ref=e317]: client-14
+            - generic [ref=e318]: "Facebook: Event recap: here's everything that happened at our…"
+            - generic [ref=e319]:
+              - generic "facebook" [ref=e320]: 📘
+              - generic [ref=e321]: agent-35
+              - generic [ref=e322]: 23h
+          - generic [ref=e323] [cursor=pointer]:
+            - generic [ref=e324]: client-14
+            - generic [ref=e325]: "Facebook: Event recap: here's everything that happened at our…"
+            - generic [ref=e326]:
+              - generic "facebook" [ref=e327]: 📘
+              - generic [ref=e328]: agent-01
+              - generic [ref=e329]: 23h
+          - generic [ref=e330] [cursor=pointer]:
+            - generic [ref=e331]: client-14
+            - generic [ref=e332]: "Facebook: Event recap: here's everything that happened at our…"
+            - generic [ref=e333]:
+              - generic "facebook" [ref=e334]: 📘
+              - generic [ref=e335]: agent-02
+              - generic [ref=e336]: 1h
+          - generic [ref=e337] [cursor=pointer]:
+            - generic [ref=e338]: client-14
+            - generic [ref=e339]: "Facebook: New integration live: connect your existing workflow…"
+            - generic [ref=e340]:
+              - generic "facebook" [ref=e341]: 📘
+              - generic [ref=e342]: agent-03
+              - generic [ref=e343]: 1h
+          - generic [ref=e344] [cursor=pointer]:
+            - generic [ref=e345]: client-14
+            - generic [ref=e346]: "Facebook: New integration live: connect your existing workflow…"
+            - generic [ref=e347]:
+              - generic "facebook" [ref=e348]: 📘
+              - generic [ref=e349]: agent-04
+              - generic [ref=e350]: 1h
+          - generic [ref=e351] [cursor=pointer]:
+            - generic [ref=e352]: client-14
+            - generic [ref=e353]: "Facebook: New integration live: connect your existing workflow…"
+            - generic [ref=e354]:
+              - generic "facebook" [ref=e355]: 📘
+              - generic [ref=e356]: agent-05
+              - generic [ref=e357]: 2h
+          - generic [ref=e358] [cursor=pointer]:
+            - generic [ref=e359]: client-14
+            - generic [ref=e360]: "Facebook: New integration live: connect your existing workflow…"
+            - generic [ref=e361]:
+              - generic "facebook" [ref=e362]: 📘
+              - generic [ref=e363]: agent-06
+              - generic [ref=e364]: 2h
+          - generic [ref=e365] [cursor=pointer]:
+            - generic [ref=e366]: client-14
+            - generic [ref=e367]: "Facebook: Big news! Our latest product drop is live — and it's…"
+            - generic [ref=e368]:
+              - generic "facebook" [ref=e369]: 📘
+              - generic [ref=e370]: agent-07
+              - generic [ref=e371]: 2h
+          - generic [ref=e372] [cursor=pointer]:
+            - generic [ref=e373]: client-15
+            - generic [ref=e374]: "Instagram: Big news! Our latest product drop is live — and it's…"
+            - generic [ref=e375]:
+              - generic "instagram" [ref=e376]: 📷
+              - generic [ref=e377]: agent-08
+              - generic [ref=e378]: 3h
+          - generic [ref=e379] [cursor=pointer]:
+            - generic [ref=e380]: client-15
+            - generic [ref=e381]: "Instagram: Big news! Our latest product drop is live — and it's…"
+            - generic [ref=e382]:
+              - generic "instagram" [ref=e383]: 📷
+              - generic [ref=e384]: agent-09
+              - generic [ref=e385]: 3h
+          - generic [ref=e386] [cursor=pointer]:
+            - generic [ref=e387]: client-15
+            - generic [ref=e388]: "Instagram: Limited time offer: 20% off all plans this week only…"
+            - generic [ref=e389]:
+              - generic "instagram" [ref=e390]: 📷
+              - generic [ref=e391]: agent-10
+              - generic [ref=e392]: 3h
+          - generic [ref=e393] [cursor=pointer]:
+            - generic [ref=e394]: client-15
+            - generic [ref=e395]: "Instagram: Limited time offer: 20% off all plans this week only…"
+            - generic [ref=e396]:
+              - generic "instagram" [ref=e397]: 📷
+              - generic [ref=e398]: agent-11
+              - generic [ref=e399]: 4h
+          - generic [ref=e400] [cursor=pointer]:
+            - generic [ref=e401]: client-15
+            - generic [ref=e402]: "Instagram: Limited time offer: 20% off all plans this week only…"
+            - generic [ref=e403]:
+              - generic "instagram" [ref=e404]: 📷
+              - generic [ref=e405]: agent-12
+              - generic [ref=e406]: 4h
+          - generic [ref=e407] [cursor=pointer]:
+            - generic [ref=e408]: client-15
+            - generic [ref=e409]: "Instagram: Introducing our summer collection. Crafted for perfo…"
+            - generic [ref=e410]:
+              - generic "instagram" [ref=e411]: 📷
+              - generic [ref=e412]: agent-13
+              - generic [ref=e413]: 4h
+          - generic [ref=e414] [cursor=pointer]:
+            - generic [ref=e415]: client-15
+            - generic [ref=e416]: "Instagram: Introducing our summer collection. Crafted for perfo…"
+            - generic [ref=e417]:
+              - generic "instagram" [ref=e418]: 📷
+              - generic [ref=e419]: agent-14
+              - generic [ref=e420]: 5h
+          - generic [ref=e421] [cursor=pointer]:
+            - generic [ref=e422]: client-15
+            - generic [ref=e423]: "X: Introducing our summer collection. Crafted for perfo…"
+            - generic [ref=e424]:
+              - generic "x" [ref=e425]: 🐦
+              - generic [ref=e426]: agent-15
+              - generic [ref=e427]: 5h
+          - generic [ref=e428] [cursor=pointer]:
+            - generic [ref=e429]: client-15
+            - generic [ref=e430]: "X: Flash sale — 48 hours only. Up to 40% off select ite…"
+            - generic [ref=e431]:
+              - generic "x" [ref=e432]: 🐦
+              - generic [ref=e433]: agent-16
+              - generic [ref=e434]: 5h
+          - generic [ref=e435] [cursor=pointer]:
+            - generic [ref=e436]: client-15
+            - generic [ref=e437]: "X: Flash sale — 48 hours only. Up to 40% off select ite…"
+            - generic [ref=e438]:
+              - generic "x" [ref=e439]: 🐦
+              - generic [ref=e440]: agent-17
+              - generic [ref=e441]: 6h
+          - generic [ref=e442] [cursor=pointer]:
+            - generic [ref=e443]: client-16
+            - generic [ref=e444]: "X: Flash sale — 48 hours only. Up to 40% off select ite…"
+            - generic [ref=e445]:
+              - generic "x" [ref=e446]: 🐦
+              - generic [ref=e447]: agent-18
+              - generic [ref=e448]: 6h
+          - generic [ref=e449] [cursor=pointer]:
+            - generic [ref=e450]: client-16
+            - generic [ref=e451]: "X: New feature alert: we just shipped the most-requeste…"
+            - generic [ref=e452]:
+              - generic "x" [ref=e453]: 🐦
+              - generic [ref=e454]: agent-19
+              - generic [ref=e455]: 6h
+          - generic [ref=e456] [cursor=pointer]:
+            - generic [ref=e457]: client-16
+            - generic [ref=e458]: "X: New feature alert: we just shipped the most-requeste…"
+            - generic [ref=e459]:
+              - generic "x" [ref=e460]: 🐦
+              - generic [ref=e461]: agent-20
+              - generic [ref=e462]: 7h
+      - generic [ref=e464]:
+        - generic [ref=e466]:
+          - generic [ref=e467]: REVIEW
+          - generic [ref=e468]:
+            - generic [ref=e469]: 8/hr
+            - generic [ref=e470]: "15"
+        - generic [ref=e472]:
+          - generic [ref=e473] [cursor=pointer]:
+            - generic [ref=e474]: client-16
+            - generic [ref=e475]: "X: New feature alert: we just shipped the most-requeste…"
+            - generic [ref=e476]:
+              - generic "x" [ref=e477]: 🐦
+              - generic [ref=e478]: UNASSIGNED
+              - generic [ref=e479]: 7h
+          - generic [ref=e480] [cursor=pointer]:
+            - generic [ref=e481]: client-16
+            - generic [ref=e482]: "X: Early access is open. Be among the first to experien…"
+            - generic [ref=e483]:
+              - generic "x" [ref=e484]: 🐦
+              - generic [ref=e485]: UNASSIGNED
+              - generic [ref=e486]: 7h
+          - generic [ref=e487] [cursor=pointer]:
+            - generic [ref=e488]: client-16
+            - generic [ref=e489]: "X: Early access is open. Be among the first to experien…"
+            - generic [ref=e490]:
+              - generic "x" [ref=e491]: 🐦
+              - generic [ref=e492]: UNASSIGNED
+              - generic [ref=e493]: 8h
+          - generic [ref=e494] [cursor=pointer]:
+            - generic [ref=e495]: client-16
+            - generic [ref=e496]: "Linkedin: Early access is open. Be among the first to experien…"
+            - generic [ref=e497]:
+              - generic "linkedin" [ref=e498]: 💼
+              - generic [ref=e499]: UNASSIGNED
+              - generic [ref=e500]: 8h
+          - generic [ref=e501] [cursor=pointer]:
+            - generic [ref=e502]: client-16
+            - generic [ref=e503]: "Linkedin: Early access is open. Be among the first to experien…"
+            - generic [ref=e504]:
+              - generic "linkedin" [ref=e505]: 💼
+              - generic [ref=e506]: UNASSIGNED
+              - generic [ref=e507]: 8h
+          - generic [ref=e508] [cursor=pointer]:
+            - generic [ref=e509]: client-16
+            - generic [ref=e510]: "Linkedin: The brands winning on social right now have one thin…"
+            - generic [ref=e511]:
+              - generic "linkedin" [ref=e512]: 💼
+              - generic [ref=e513]: UNASSIGNED
+              - generic [ref=e514]: 9h
+          - generic [ref=e515] [cursor=pointer]:
+            - generic [ref=e516]: client-17
+            - generic [ref=e517]: "Linkedin: The brands winning on social right now have one thin…"
+            - generic [ref=e518]:
+              - generic "linkedin" [ref=e519]: 💼
+              - generic [ref=e520]: UNASSIGNED
+              - generic [ref=e521]: 9h
+          - generic [ref=e522] [cursor=pointer]:
+            - generic [ref=e523]: client-17
+            - generic [ref=e524]: "Linkedin: The brands winning on social right now have one thin…"
+            - generic [ref=e525]:
+              - generic "linkedin" [ref=e526]: 💼
+              - generic [ref=e527]: UNASSIGNED
+              - generic [ref=e528]: 9h
+          - generic [ref=e529] [cursor=pointer]:
+            - generic [ref=e530]: client-17
+            - generic [ref=e531]: "Linkedin: AI won't replace your marketing team. But teams usin…"
+            - generic [ref=e532]:
+              - generic "linkedin" [ref=e533]: 💼
+              - generic [ref=e534]: UNASSIGNED
+              - generic [ref=e535]: 10h
+          - generic [ref=e536] [cursor=pointer]:
+            - generic [ref=e537]: client-17
+            - generic [ref=e538]: "Linkedin: AI won't replace your marketing team. But teams usin…"
+            - generic [ref=e539]:
+              - generic "linkedin" [ref=e540]: 💼
+              - generic [ref=e541]: UNASSIGNED
+              - generic [ref=e542]: 10h
+          - generic [ref=e543] [cursor=pointer]:
+            - generic [ref=e544]: client-17
+            - generic [ref=e545]: "Linkedin: AI won't replace your marketing team. But teams usin…"
+            - generic [ref=e546]:
+              - generic "linkedin" [ref=e547]: 💼
+              - generic [ref=e548]: UNASSIGNED
+              - generic [ref=e549]: 10h
+          - generic [ref=e550] [cursor=pointer]:
+            - generic [ref=e551]: client-17
+            - generic [ref=e552]: "Facebook: Three things we learned from launching in five marke…"
+            - generic [ref=e553]:
+              - generic "facebook" [ref=e554]: 📘
+              - generic [ref=e555]: UNASSIGNED
+              - generic [ref=e556]: 11h
+          - generic [ref=e557] [cursor=pointer]:
+            - generic [ref=e558]: client-17
+            - generic [ref=e559]: "Facebook: Three things we learned from launching in five marke…"
+            - generic [ref=e560]:
+              - generic "facebook" [ref=e561]: 📘
+              - generic [ref=e562]: UNASSIGNED
+              - generic [ref=e563]: 11h
+          - generic [ref=e564] [cursor=pointer]:
+            - generic [ref=e565]: client-17
+            - generic [ref=e566]: "Facebook: Three things we learned from launching in five marke…"
+            - generic [ref=e567]:
+              - generic "facebook" [ref=e568]: 📘
+              - generic [ref=e569]: UNASSIGNED
+              - generic [ref=e570]: 11h
+          - generic [ref=e571] [cursor=pointer]:
+            - generic [ref=e572]: client-17
+            - generic [ref=e573]: "Facebook: The best content strategies aren't complicated. They…"
+            - generic [ref=e574]:
+              - generic "facebook" [ref=e575]: 📘
+              - generic [ref=e576]: UNASSIGNED
+              - generic [ref=e577]: 12h
+      - generic [ref=e579]:
+        - generic [ref=e581]:
+          - generic [ref=e582]: APPROVED
+          - generic [ref=e583]:
+            - generic [ref=e584]: 15/hr
+            - generic [ref=e585]: "20"
+        - generic [ref=e587]:
+          - generic [ref=e588] [cursor=pointer]:
+            - generic [ref=e589]: client-18
+            - generic [ref=e590]: "Facebook: The best content strategies aren't complicated. They…"
+            - generic [ref=e591]:
+              - generic "facebook" [ref=e592]: 📘
+              - generic [ref=e593]: UNASSIGNED
+              - generic [ref=e594]: 12h
+          - generic [ref=e595] [cursor=pointer]:
+            - generic [ref=e596]: client-18
+            - generic [ref=e597]: "Facebook: The best content strategies aren't complicated. They…"
+            - generic [ref=e598]:
+              - generic "facebook" [ref=e599]: 📘
+              - generic [ref=e600]: UNASSIGNED
+              - generic [ref=e601]: 12h
+          - generic [ref=e602] [cursor=pointer]:
+            - generic [ref=e603]: client-18
+            - generic [ref=e604]: "Facebook: Why we stopped chasing follower counts and started o…"
+            - generic [ref=e605]:
+              - generic "facebook" [ref=e606]: 📘
+              - generic [ref=e607]: UNASSIGNED
+              - generic [ref=e608]: 13h
+          - generic [ref=e609] [cursor=pointer]:
+            - generic [ref=e610]: client-18
+            - generic [ref=e611]: "Facebook: Why we stopped chasing follower counts and started o…"
+            - generic [ref=e612]:
+              - generic "facebook" [ref=e613]: 📘
+              - generic [ref=e614]: UNASSIGNED
+              - generic [ref=e615]: 13h
+          - generic [ref=e616] [cursor=pointer]:
+            - generic [ref=e617]: client-18
+            - generic [ref=e618]: "Instagram: Why we stopped chasing follower counts and started o…"
+            - generic [ref=e619]:
+              - generic "instagram" [ref=e620]: 📷
+              - generic [ref=e621]: UNASSIGNED
+              - generic [ref=e622]: 13h
+          - generic [ref=e623] [cursor=pointer]:
+            - generic [ref=e624]: client-18
+            - generic [ref=e625]: "Instagram: Your audience doesn't want more content. They want m…"
+            - generic [ref=e626]:
+              - generic "instagram" [ref=e627]: 📷
+              - generic [ref=e628]: UNASSIGNED
+              - generic [ref=e629]: 14h
+          - generic [ref=e630] [cursor=pointer]:
+            - generic [ref=e631]: client-18
+            - generic [ref=e632]: "Instagram: Your audience doesn't want more content. They want m…"
+            - generic [ref=e633]:
+              - generic "instagram" [ref=e634]: 📷
+              - generic [ref=e635]: UNASSIGNED
+              - generic [ref=e636]: 14h
+          - generic [ref=e637] [cursor=pointer]:
+            - generic [ref=e638]: client-18
+            - generic [ref=e639]: "Instagram: Your audience doesn't want more content. They want m…"
+            - generic [ref=e640]:
+              - generic "instagram" [ref=e641]: 📷
+              - generic [ref=e642]: UNASSIGNED
+              - generic [ref=e643]: 14h
+          - generic [ref=e644] [cursor=pointer]:
+            - generic [ref=e645]: client-18
+            - generic [ref=e646]: "Instagram: Your audience doesn't want more content. They want m…"
+            - generic [ref=e647]:
+              - generic "instagram" [ref=e648]: 📷
+              - generic [ref=e649]: UNASSIGNED
+              - generic [ref=e650]: 15h
+          - generic [ref=e651] [cursor=pointer]:
+            - generic [ref=e652]: client-19
+            - generic [ref=e653]: "Instagram: What's the one tool you can't run your business with…"
+            - generic [ref=e654]:
+              - generic "instagram" [ref=e655]: 📷
+              - generic [ref=e656]: UNASSIGNED
+              - generic [ref=e657]: 15h
+          - generic [ref=e658] [cursor=pointer]:
+            - generic [ref=e659]: client-19
+            - generic [ref=e660]: "X: What's the one tool you can't run your business with…"
+            - generic [ref=e661]:
+              - generic "x" [ref=e662]: 🐦
+              - generic [ref=e663]: UNASSIGNED
+              - generic [ref=e664]: 15h
+          - generic [ref=e665] [cursor=pointer]:
+            - generic [ref=e666]: client-19
+            - generic [ref=e667]: "X: What's the one tool you can't run your business with…"
+            - generic [ref=e668]:
+              - generic "x" [ref=e669]: 🐦
+              - generic [ref=e670]: UNASSIGNED
+              - generic [ref=e671]: 16h
+          - generic [ref=e672] [cursor=pointer]:
+            - generic [ref=e673]: client-19
+            - generic [ref=e674]: "X: We asked our community what they struggle with most.…"
+            - generic [ref=e675]:
+              - generic "x" [ref=e676]: 🐦
+              - generic [ref=e677]: UNASSIGNED
+              - generic [ref=e678]: 16h
+          - generic [ref=e679] [cursor=pointer]:
+            - generic [ref=e680]: client-19
+            - generic [ref=e681]: "X: We asked our community what they struggle with most.…"
+            - generic [ref=e682]:
+              - generic "x" [ref=e683]: 🐦
+              - generic [ref=e684]: UNASSIGNED
+              - generic [ref=e685]: 16h
+          - generic [ref=e686] [cursor=pointer]:
+            - generic [ref=e687]: client-19
+            - generic [ref=e688]: "X: We asked our community what they struggle with most.…"
+            - generic [ref=e689]:
+              - generic "x" [ref=e690]: 🐦
+              - generic [ref=e691]: UNASSIGNED
+              - generic [ref=e692]: 17h
+          - generic [ref=e693] [cursor=pointer]:
+            - generic [ref=e694]: client-19
+            - generic [ref=e695]: "X: Hot take: most brand content is too polished. Real,…"
+            - generic [ref=e696]:
+              - generic "x" [ref=e697]: 🐦
+              - generic [ref=e698]: UNASSIGNED
+              - generic [ref=e699]: 17h
+          - generic [ref=e700] [cursor=pointer]:
+            - generic [ref=e701]: client-19
+            - generic [ref=e702]: "X: Hot take: most brand content is too polished. Real,…"
+            - generic [ref=e703]:
+              - generic "x" [ref=e704]: 🐦
+              - generic [ref=e705]: UNASSIGNED
+              - generic [ref=e706]: 17h
+          - generic [ref=e707] [cursor=pointer]:
+            - generic [ref=e708]: client-19
+            - generic [ref=e709]: "X: Hot take: most brand content is too polished. Real,…"
+            - generic [ref=e710]:
+              - generic "x" [ref=e711]: 🐦
+              - generic [ref=e712]: UNASSIGNED
+              - generic [ref=e713]: 18h
+          - generic [ref=e714] [cursor=pointer]:
+            - generic [ref=e715]: client-19
+            - generic [ref=e716]: "X: Two truths and a lie about social media marketing. C…"
+            - generic [ref=e717]:
+              - generic "x" [ref=e718]: 🐦
+              - generic [ref=e719]: UNASSIGNED
+              - generic [ref=e720]: 18h
+          - generic [ref=e721] [cursor=pointer]:
+            - generic [ref=e722]: client-20
+            - generic [ref=e723]: "Linkedin: Two truths and a lie about social media marketing. C…"
+            - generic [ref=e724]:
+              - generic "linkedin" [ref=e725]: 💼
+              - generic [ref=e726]: UNASSIGNED
+              - generic [ref=e727]: 19h
+      - generic [ref=e729]:
+        - generic [ref=e731]:
+          - generic [ref=e732]: SCHEDULED
+          - generic [ref=e733]:
+            - generic [ref=e734]: 22/hr
+            - generic [ref=e735]: "35"
+        - generic [ref=e737]:
+          - generic [ref=e738] [cursor=pointer]:
+            - generic [ref=e739]: client-20
+            - generic [ref=e740]: "Linkedin: Two truths and a lie about social media marketing. C…"
+            - generic [ref=e741]:
+              - generic "linkedin" [ref=e742]: 💼
+              - generic [ref=e743]: UNASSIGNED
+              - generic [ref=e744]: 19h
+          - generic [ref=e745] [cursor=pointer]:
+            - generic [ref=e746]: client-20
+            - generic [ref=e747]: "Linkedin: Tag a colleague who would actually read a 2,000-word…"
+            - generic [ref=e748]:
+              - generic "linkedin" [ref=e749]: 💼
+              - generic [ref=e750]: UNASSIGNED
+              - generic [ref=e751]: 19h
+          - generic [ref=e752] [cursor=pointer]:
+            - generic [ref=e753]: client-20
+            - generic [ref=e754]: "Linkedin: Tag a colleague who would actually read a 2,000-word…"
+            - generic [ref=e755]:
+              - generic "linkedin" [ref=e756]: 💼
+              - generic [ref=e757]: UNASSIGNED
+              - generic [ref=e758]: 20h
+          - generic [ref=e759] [cursor=pointer]:
+            - generic [ref=e760]: client-20
+            - generic [ref=e761]: "Linkedin: Tag a colleague who would actually read a 2,000-word…"
+            - generic [ref=e762]:
+              - generic "linkedin" [ref=e763]: 💼
+              - generic [ref=e764]: UNASSIGNED
+              - generic [ref=e765]: 20h
+          - generic [ref=e766] [cursor=pointer]:
+            - generic [ref=e767]: client-20
+            - generic [ref=e768]: "Linkedin: We're curious — how many platforms is your team acti…"
+            - generic [ref=e769]:
+              - generic "linkedin" [ref=e770]: 💼
+              - generic [ref=e771]: UNASSIGNED
+              - generic [ref=e772]: 20h
+          - generic [ref=e773] [cursor=pointer]:
+            - generic [ref=e774]: client-20
+            - generic [ref=e775]: "Linkedin: We're curious — how many platforms is your team acti…"
+            - generic [ref=e776]:
+              - generic "linkedin" [ref=e777]: 💼
+              - generic [ref=e778]: UNASSIGNED
+              - generic [ref=e779]: 21h
+          - generic [ref=e780] [cursor=pointer]:
+            - generic [ref=e781]: client-20
+            - generic [ref=e782]: "Linkedin: We're curious — how many platforms is your team acti…"
+            - generic [ref=e783]:
+              - generic "linkedin" [ref=e784]: 💼
+              - generic [ref=e785]: UNASSIGNED
+              - generic [ref=e786]: 21h
+          - generic [ref=e787] [cursor=pointer]:
+            - generic [ref=e788]: client-20
+            - generic [ref=e789]: "Facebook: We're excited to announce our partnership with one o…"
+            - generic [ref=e790]:
+              - generic "facebook" [ref=e791]: 📘
+              - generic [ref=e792]: UNASSIGNED
+              - generic [ref=e793]: 21h
+          - generic [ref=e794] [cursor=pointer]:
+            - generic [ref=e795]: client-01
+            - generic [ref=e796]: "Facebook: We're excited to announce our partnership with one o…"
+            - generic [ref=e797]:
+              - generic "facebook" [ref=e798]: 📘
+              - generic [ref=e799]: UNASSIGNED
+              - generic [ref=e800]: 22h
+          - generic [ref=e801] [cursor=pointer]:
+            - generic [ref=e802]: client-01
+            - generic [ref=e803]: "Facebook: We're excited to announce our partnership with one o…"
+            - generic [ref=e804]:
+              - generic "facebook" [ref=e805]: 📘
+              - generic [ref=e806]: UNASSIGNED
+              - generic [ref=e807]: 22h
+          - generic [ref=e808] [cursor=pointer]:
+            - generic [ref=e809]: client-01
+            - generic [ref=e810]: "Facebook: We're excited to announce our partnership with one o…"
+            - generic [ref=e811]:
+              - generic "facebook" [ref=e812]: 📘
+              - generic [ref=e813]: UNASSIGNED
+              - generic [ref=e814]: 22h
+          - generic [ref=e815] [cursor=pointer]:
+            - generic [ref=e816]: client-01
+            - generic [ref=e817]: "Facebook: Our Q2 results are in. Growth across every channel,…"
+            - generic [ref=e818]:
+              - generic "facebook" [ref=e819]: 📘
+              - generic [ref=e820]: UNASSIGNED
+              - generic [ref=e821]: 23h
+          - generic [ref=e822] [cursor=pointer]:
+            - generic [ref=e823]: client-01
+            - generic [ref=e824]: "Facebook: Our Q2 results are in. Growth across every channel,…"
+            - generic [ref=e825]:
+              - generic "facebook" [ref=e826]: 📘
+              - generic [ref=e827]: UNASSIGNED
+              - generic [ref=e828]: 23h
+          - generic [ref=e829] [cursor=pointer]:
+            - generic [ref=e830]: client-01
+            - generic [ref=e831]: "Facebook: Our Q2 results are in. Growth across every channel,…"
+            - generic [ref=e832]:
+              - generic "facebook" [ref=e833]: 📘
+              - generic [ref=e834]: UNASSIGNED
+              - generic [ref=e835]: 23h
+          - generic [ref=e836] [cursor=pointer]:
+            - generic [ref=e837]: client-01
+            - generic [ref=e838]: "Facebook: Huge milestone: we just crossed 10,000 active users.…"
+            - generic [ref=e839]:
+              - generic "facebook" [ref=e840]: 📘
+              - generic [ref=e841]: UNASSIGNED
+              - generic [ref=e842]: 1h
+          - generic [ref=e843] [cursor=pointer]:
+            - generic [ref=e844]: client-01
+            - generic [ref=e845]: "Instagram: Huge milestone: we just crossed 10,000 active users.…"
+            - generic [ref=e846]:
+              - generic "instagram" [ref=e847]: 📷
+              - generic [ref=e848]: UNASSIGNED
+              - generic [ref=e849]: 1h
+          - generic [ref=e850] [cursor=pointer]:
+            - generic [ref=e851]: client-01
+            - generic [ref=e852]: "Instagram: Huge milestone: we just crossed 10,000 active users.…"
+            - generic [ref=e853]:
+              - generic "instagram" [ref=e854]: 📷
+              - generic [ref=e855]: UNASSIGNED
+              - generic [ref=e856]: 1h
+          - generic [ref=e857] [cursor=pointer]:
+            - generic [ref=e858]: client-02
+            - generic [ref=e859]: "Instagram: We're hiring. If you're passionate about building th…"
+            - generic [ref=e860]:
+              - generic "instagram" [ref=e861]: 📷
+              - generic [ref=e862]: UNASSIGNED
+              - generic [ref=e863]: 2h
+          - generic [ref=e864] [cursor=pointer]:
+            - generic [ref=e865]: client-02
+            - generic [ref=e866]: "Instagram: We're hiring. If you're passionate about building th…"
+            - generic [ref=e867]:
+              - generic "instagram" [ref=e868]: 📷
+              - generic [ref=e869]: UNASSIGNED
+              - generic [ref=e870]: 2h
+          - generic [ref=e871] [cursor=pointer]:
+            - generic [ref=e872]: client-02
+            - generic [ref=e873]: "Instagram: We're hiring. If you're passionate about building th…"
+            - generic [ref=e874]:
+              - generic "instagram" [ref=e875]: 📷
+              - generic [ref=e876]: UNASSIGNED
+              - generic [ref=e877]: 2h
+          - generic [ref=e878] [cursor=pointer]:
+            - generic [ref=e879]: client-02
+            - generic [ref=e880]: "Instagram: Event recap: here's everything that happened at our…"
+            - generic [ref=e881]:
+              - generic "instagram" [ref=e882]: 📷
+              - generic [ref=e883]: UNASSIGNED
+              - generic [ref=e884]: 3h
+          - generic [ref=e885] [cursor=pointer]:
+            - generic [ref=e886]: client-02
+            - generic [ref=e887]: "Instagram: Event recap: here's everything that happened at our…"
+            - generic [ref=e888]:
+              - generic "instagram" [ref=e889]: 📷
+              - generic [ref=e890]: UNASSIGNED
+              - generic [ref=e891]: 3h
+          - generic [ref=e892] [cursor=pointer]:
+            - generic [ref=e893]: client-02
+            - generic [ref=e894]: "X: Event recap: here's everything that happened at our…"
+            - generic [ref=e895]:
+              - generic "x" [ref=e896]: 🐦
+              - generic [ref=e897]: UNASSIGNED
+              - generic [ref=e898]: 3h
+          - generic [ref=e899] [cursor=pointer]:
+            - generic [ref=e900]: client-02
+            - generic [ref=e901]: "X: New integration live: connect your existing workflow…"
+            - generic [ref=e902]:
+              - generic "x" [ref=e903]: 🐦
+              - generic [ref=e904]: UNASSIGNED
+              - generic [ref=e905]: 4h
+          - generic [ref=e906] [cursor=pointer]:
+            - generic [ref=e907]: client-02
+            - generic [ref=e908]: "X: New integration live: connect your existing workflow…"
+            - generic [ref=e909]:
+              - generic "x" [ref=e910]: 🐦
+              - generic [ref=e911]: UNASSIGNED
+              - generic [ref=e912]: 4h
+          - generic [ref=e913] [cursor=pointer]:
+            - generic [ref=e914]: client-02
+            - generic [ref=e915]: "X: New integration live: connect your existing workflow…"
+            - generic [ref=e916]:
+              - generic "x" [ref=e917]: 🐦
+              - generic [ref=e918]: UNASSIGNED
+              - generic [ref=e919]: 4h
+          - generic [ref=e920] [cursor=pointer]:
+            - generic [ref=e921]: client-03
+            - generic [ref=e922]: "X: Big news! Our latest product drop is live — and it's…"
+            - generic [ref=e923]:
+              - generic "x" [ref=e924]: 🐦
+              - generic [ref=e925]: UNASSIGNED
+              - generic [ref=e926]: 5h
+          - generic [ref=e927] [cursor=pointer]:
+            - generic [ref=e928]: client-03
+            - generic [ref=e929]: "X: Big news! Our latest product drop is live — and it's…"
+            - generic [ref=e930]:
+              - generic "x" [ref=e931]: 🐦
+              - generic [ref=e932]: UNASSIGNED
+              - generic [ref=e933]: 5h
+          - generic [ref=e934] [cursor=pointer]:
+            - generic [ref=e935]: client-03
+            - generic [ref=e936]: "X: Big news! Our latest product drop is live — and it's…"
+            - generic [ref=e937]:
+              - generic "x" [ref=e938]: 🐦
+              - generic [ref=e939]: UNASSIGNED
+              - generic [ref=e940]: 5h
+          - generic [ref=e941] [cursor=pointer]:
+            - generic [ref=e942]: client-03
+            - generic [ref=e943]: "X: Big news! Our latest product drop is live — and it's…"
+            - generic [ref=e944]:
+              - generic "x" [ref=e945]: 🐦
+              - generic [ref=e946]: UNASSIGNED
+              - generic [ref=e947]: 6h
+          - generic [ref=e948] [cursor=pointer]:
+            - generic [ref=e949]: client-03
+            - generic [ref=e950]: "X: Limited time offer: 20% off all plans this week only…"
+            - generic [ref=e951]:
+              - generic "x" [ref=e952]: 🐦
+              - generic [ref=e953]: UNASSIGNED
+              - generic [ref=e954]: 6h
+          - generic [ref=e955] [cursor=pointer]:
+            - generic [ref=e956]: client-03
+            - generic [ref=e957]: "Linkedin: Limited time offer: 20% off all plans this week only…"
+            - generic [ref=e958]:
+              - generic "linkedin" [ref=e959]: 💼
+              - generic [ref=e960]: UNASSIGNED
+              - generic [ref=e961]: 6h
+          - generic [ref=e962] [cursor=pointer]:
+            - generic [ref=e963]: client-03
+            - generic [ref=e964]: "Linkedin: Limited time offer: 20% off all plans this week only…"
+            - generic [ref=e965]:
+              - generic "linkedin" [ref=e966]: 💼
+              - generic [ref=e967]: UNASSIGNED
+              - generic [ref=e968]: 7h
+          - generic [ref=e969] [cursor=pointer]:
+            - generic [ref=e970]: client-03
+            - generic [ref=e971]: "Linkedin: Introducing our summer collection. Crafted for perfo…"
+            - generic [ref=e972]:
+              - generic "linkedin" [ref=e973]: 💼
+              - generic [ref=e974]: UNASSIGNED
+              - generic [ref=e975]: 7h
+          - generic [ref=e976] [cursor=pointer]:
+            - generic [ref=e977]: client-03
+            - generic [ref=e978]: "Linkedin: Introducing our summer collection. Crafted for perfo…"
+            - generic [ref=e979]:
+              - generic "linkedin" [ref=e980]: 💼
+              - generic [ref=e981]: UNASSIGNED
+              - generic [ref=e982]: 7h
+      - generic [ref=e984]:
+        - generic [ref=e986]:
+          - generic [ref=e987]: PUBLISHED
+          - generic [ref=e988]:
+            - generic [ref=e989]: 40/hr
+            - generic [ref=e990]: "65"
+        - generic [ref=e992]:
+          - generic [ref=e993] [cursor=pointer]:
+            - generic [ref=e994]: client-04
+            - generic [ref=e995]: "Linkedin: Introducing our summer collection. Crafted for perfo…"
+            - generic [ref=e996]:
+              - generic "linkedin" [ref=e997]: 💼
+              - generic [ref=e998]: agent-21
+              - generic [ref=e999]: 2m
+          - generic [ref=e1000] [cursor=pointer]:
+            - generic [ref=e1001]: client-04
+            - generic [ref=e1002]: "Linkedin: Flash sale — 48 hours only. Up to 40% off select ite…"
+            - generic [ref=e1003]:
+              - generic "linkedin" [ref=e1004]: 💼
+              - generic [ref=e1005]: agent-22
+              - generic [ref=e1006]: 3m
+          - generic [ref=e1007] [cursor=pointer]:
+            - generic [ref=e1008]: client-04
+            - generic [ref=e1009]: "Linkedin: Flash sale — 48 hours only. Up to 40% off select ite…"
+            - generic [ref=e1010]:
+              - generic "linkedin" [ref=e1011]: 💼
+              - generic [ref=e1012]: agent-23
+              - generic [ref=e1013]: 3m
+          - generic [ref=e1014] [cursor=pointer]:
+            - generic [ref=e1015]: client-04
+            - generic [ref=e1016]: "Linkedin: Flash sale — 48 hours only. Up to 40% off select ite…"
+            - generic [ref=e1017]:
+              - generic "linkedin" [ref=e1018]: 💼
+              - generic [ref=e1019]: agent-24
+              - generic [ref=e1020]: 3m
+          - generic [ref=e1021] [cursor=pointer]:
+            - generic [ref=e1022]: client-04
+            - generic [ref=e1023]: "Facebook: New feature alert: we just shipped the most-requeste…"
+            - generic [ref=e1024]:
+              - generic "facebook" [ref=e1025]: 📘
+              - generic [ref=e1026]: agent-25
+              - generic [ref=e1027]: 3m
+          - generic [ref=e1028] [cursor=pointer]:
+            - generic [ref=e1029]: client-04
+            - generic [ref=e1030]: "Facebook: New feature alert: we just shipped the most-requeste…"
+            - generic [ref=e1031]:
+              - generic "facebook" [ref=e1032]: 📘
+              - generic [ref=e1033]: agent-26
+              - generic [ref=e1034]: 4m
+          - generic [ref=e1035] [cursor=pointer]:
+            - generic [ref=e1036]: client-04
+            - generic [ref=e1037]: "Facebook: New feature alert: we just shipped the most-requeste…"
+            - generic [ref=e1038]:
+              - generic "facebook" [ref=e1039]: 📘
+              - generic [ref=e1040]: agent-27
+              - generic [ref=e1041]: 4m
+          - generic [ref=e1042] [cursor=pointer]:
+            - generic [ref=e1043]: client-04
+            - generic [ref=e1044]: "Facebook: Early access is open. Be among the first to experien…"
+            - generic [ref=e1045]:
+              - generic "facebook" [ref=e1046]: 📘
+              - generic [ref=e1047]: agent-28
+              - generic [ref=e1048]: 4m
+          - generic [ref=e1049] [cursor=pointer]:
+            - generic [ref=e1050]: client-04
+            - generic [ref=e1051]: "Facebook: Early access is open. Be among the first to experien…"
+            - generic [ref=e1052]:
+              - generic "facebook" [ref=e1053]: 📘
+              - generic [ref=e1054]: agent-29
+              - generic [ref=e1055]: 4m
+          - generic [ref=e1056] [cursor=pointer]:
+            - generic [ref=e1057]: client-04
+            - generic [ref=e1058]: "Facebook: Early access is open. Be among the first to experien…"
+            - generic [ref=e1059]:
+              - generic "facebook" [ref=e1060]: 📘
+              - generic [ref=e1061]: agent-30
+              - generic [ref=e1062]: 4m
+          - generic [ref=e1063] [cursor=pointer]:
+            - generic [ref=e1064]: client-05
+            - generic [ref=e1065]: "Facebook: The brands winning on social right now have one thin…"
+            - generic [ref=e1066]:
+              - generic "facebook" [ref=e1067]: 📘
+              - generic [ref=e1068]: agent-31
+              - generic [ref=e1069]: 5m
+          - generic [ref=e1070] [cursor=pointer]:
+            - generic [ref=e1071]: client-05
+            - generic [ref=e1072]: "Facebook: The brands winning on social right now have one thin…"
+            - generic [ref=e1073]:
+              - generic "facebook" [ref=e1074]: 📘
+              - generic [ref=e1075]: agent-32
+              - generic [ref=e1076]: 5m
+          - generic [ref=e1077] [cursor=pointer]:
+            - generic [ref=e1078]: client-05
+            - generic [ref=e1079]: "Instagram: The brands winning on social right now have one thin…"
+            - generic [ref=e1080]:
+              - generic "instagram" [ref=e1081]: 📷
+              - generic [ref=e1082]: agent-33
+              - generic [ref=e1083]: 5m
+          - generic [ref=e1084] [cursor=pointer]:
+            - generic [ref=e1085]: client-05
+            - generic [ref=e1086]: "Instagram: The brands winning on social right now have one thin…"
+            - generic [ref=e1087]:
+              - generic "instagram" [ref=e1088]: 📷
+              - generic [ref=e1089]: agent-34
+              - generic [ref=e1090]: 5m
+          - generic [ref=e1091] [cursor=pointer]:
+            - generic [ref=e1092]: client-05
+            - generic [ref=e1093]: "Instagram: AI won't replace your marketing team. But teams usin…"
+            - generic [ref=e1094]:
+              - generic "instagram" [ref=e1095]: 📷
+              - generic [ref=e1096]: agent-35
+              - generic [ref=e1097]: 6m
+          - generic [ref=e1098] [cursor=pointer]:
+            - generic [ref=e1099]: client-05
+            - generic [ref=e1100]: "Instagram: AI won't replace your marketing team. But teams usin…"
+            - generic [ref=e1101]:
+              - generic "instagram" [ref=e1102]: 📷
+              - generic [ref=e1103]: agent-01
+              - generic [ref=e1104]: 6m
+          - generic [ref=e1105] [cursor=pointer]:
+            - generic [ref=e1106]: client-05
+            - generic [ref=e1107]: "Instagram: AI won't replace your marketing team. But teams usin…"
+            - generic [ref=e1108]:
+              - generic "instagram" [ref=e1109]: 📷
+              - generic [ref=e1110]: agent-02
+              - generic [ref=e1111]: 6m
+          - generic [ref=e1112] [cursor=pointer]:
+            - generic [ref=e1113]: client-05
+            - generic [ref=e1114]: "Instagram: Three things we learned from launching in five marke…"
+            - generic [ref=e1115]:
+              - generic "instagram" [ref=e1116]: 📷
+              - generic [ref=e1117]: agent-03
+              - generic [ref=e1118]: 6m
+          - generic [ref=e1119] [cursor=pointer]:
+            - generic [ref=e1120]: client-05
+            - generic [ref=e1121]: "X: Three things we learned from launching in five marke…"
+            - generic [ref=e1122]:
+              - generic "x" [ref=e1123]: 🐦
+              - generic [ref=e1124]: agent-04
+              - generic [ref=e1125]: 6m
+          - generic [ref=e1126] [cursor=pointer]:
+            - generic [ref=e1127]: client-06
+            - generic [ref=e1128]: "X: Three things we learned from launching in five marke…"
+            - generic [ref=e1129]:
+              - generic "x" [ref=e1130]: 🐦
+              - generic [ref=e1131]: agent-05
+              - generic [ref=e1132]: 7m
+          - generic [ref=e1133] [cursor=pointer]:
+            - generic [ref=e1134]: client-06
+            - generic [ref=e1135]: "X: The best content strategies aren't complicated. They…"
+            - generic [ref=e1136]:
+              - generic "x" [ref=e1137]: 🐦
+              - generic [ref=e1138]: agent-06
+              - generic [ref=e1139]: 7m
+          - generic [ref=e1140] [cursor=pointer]:
+            - generic [ref=e1141]: client-06
+            - generic [ref=e1142]: "X: The best content strategies aren't complicated. They…"
+            - generic [ref=e1143]:
+              - generic "x" [ref=e1144]: 🐦
+              - generic [ref=e1145]: agent-07
+              - generic [ref=e1146]: 7m
+          - generic [ref=e1147] [cursor=pointer]:
+            - generic [ref=e1148]: client-06
+            - generic [ref=e1149]: "X: The best content strategies aren't complicated. They…"
+            - generic [ref=e1150]:
+              - generic "x" [ref=e1151]: 🐦
+              - generic [ref=e1152]: agent-08
+              - generic [ref=e1153]: 7m
+          - generic [ref=e1154] [cursor=pointer]:
+            - generic [ref=e1155]: client-06
+            - generic [ref=e1156]: "X: Why we stopped chasing follower counts and started o…"
+            - generic [ref=e1157]:
+              - generic "x" [ref=e1158]: 🐦
+              - generic [ref=e1159]: agent-09
+              - generic [ref=e1160]: 8m
+          - generic [ref=e1161] [cursor=pointer]:
+            - generic [ref=e1162]: client-06
+            - generic [ref=e1163]: "X: Why we stopped chasing follower counts and started o…"
+            - generic [ref=e1164]:
+              - generic "x" [ref=e1165]: 🐦
+              - generic [ref=e1166]: agent-10
+              - generic [ref=e1167]: 8m
+          - generic [ref=e1168] [cursor=pointer]:
+            - generic [ref=e1169]: client-06
+            - generic [ref=e1170]: "X: Why we stopped chasing follower counts and started o…"
+            - generic [ref=e1171]:
+              - generic "x" [ref=e1172]: 🐦
+              - generic [ref=e1173]: agent-11
+              - generic [ref=e1174]: 8m
+          - generic [ref=e1175] [cursor=pointer]:
+            - generic [ref=e1176]: client-06
+            - generic [ref=e1177]: "X: Your audience doesn't want more content. They want m…"
+            - generic [ref=e1178]:
+              - generic "x" [ref=e1179]: 🐦
+              - generic [ref=e1180]: agent-12
+              - generic [ref=e1181]: 8m
+          - generic [ref=e1182] [cursor=pointer]:
+            - generic [ref=e1183]: client-06
+            - generic [ref=e1184]: "Linkedin: Your audience doesn't want more content. They want m…"
+            - generic [ref=e1185]:
+              - generic "linkedin" [ref=e1186]: 💼
+              - generic [ref=e1187]: agent-13
+              - generic [ref=e1188]: 8m
+          - generic [ref=e1189] [cursor=pointer]:
+            - generic [ref=e1190]: client-07
+            - generic [ref=e1191]: "Linkedin: Your audience doesn't want more content. They want m…"
+            - generic [ref=e1192]:
+              - generic "linkedin" [ref=e1193]: 💼
+              - generic [ref=e1194]: agent-14
+              - generic [ref=e1195]: 9m
+          - generic [ref=e1196] [cursor=pointer]:
+            - generic [ref=e1197]: client-07
+            - generic [ref=e1198]: "Linkedin: What's the one tool you can't run your business with…"
+            - generic [ref=e1199]:
+              - generic "linkedin" [ref=e1200]: 💼
+              - generic [ref=e1201]: agent-15
+              - generic [ref=e1202]: 9m
+          - generic [ref=e1203] [cursor=pointer]:
+            - generic [ref=e1204]: client-07
+            - generic [ref=e1205]: "Linkedin: What's the one tool you can't run your business with…"
+            - generic [ref=e1206]:
+              - generic "linkedin" [ref=e1207]: 💼
+              - generic [ref=e1208]: agent-16
+              - generic [ref=e1209]: 9m
+          - generic [ref=e1210] [cursor=pointer]:
+            - generic [ref=e1211]: client-07
+            - generic [ref=e1212]: "Linkedin: What's the one tool you can't run your business with…"
+            - generic [ref=e1213]:
+              - generic "linkedin" [ref=e1214]: 💼
+              - generic [ref=e1215]: agent-17
+              - generic [ref=e1216]: 9m
+          - generic [ref=e1217] [cursor=pointer]:
+            - generic [ref=e1218]: client-07
+            - generic [ref=e1219]: "Linkedin: What's the one tool you can't run your business with…"
+            - generic [ref=e1220]:
+              - generic "linkedin" [ref=e1221]: 💼
+              - generic [ref=e1222]: agent-18
+              - generic [ref=e1223]: 0m
+          - generic [ref=e1224] [cursor=pointer]:
+            - generic [ref=e1225]: client-07
+            - generic [ref=e1226]: "Linkedin: We asked our community what they struggle with most.…"
+            - generic [ref=e1227]:
+              - generic "linkedin" [ref=e1228]: 💼
+              - generic [ref=e1229]: agent-19
+              - generic [ref=e1230]: 0m
+          - generic [ref=e1231] [cursor=pointer]:
+            - generic [ref=e1232]: client-07
+            - generic [ref=e1233]: "Linkedin: We asked our community what they struggle with most.…"
+            - generic [ref=e1234]:
+              - generic "linkedin" [ref=e1235]: 💼
+              - generic [ref=e1236]: agent-20
+              - generic [ref=e1237]: 0m
+          - generic [ref=e1238] [cursor=pointer]:
+            - generic [ref=e1239]: client-07
+            - generic [ref=e1240]: "Facebook: We asked our community what they struggle with most.…"
+            - generic [ref=e1241]:
+              - generic "facebook" [ref=e1242]: 📘
+              - generic [ref=e1243]: agent-21
+              - generic [ref=e1244]: 0m
+          - generic [ref=e1245] [cursor=pointer]:
+            - generic [ref=e1246]: client-07
+            - generic [ref=e1247]: "Facebook: Hot take: most brand content is too polished. Real,…"
+            - generic [ref=e1248]:
+              - generic "facebook" [ref=e1249]: 📘
+              - generic [ref=e1250]: agent-22
+              - generic [ref=e1251]: 1m
+          - generic [ref=e1252] [cursor=pointer]:
+            - generic [ref=e1253]: client-08
+            - generic [ref=e1254]: "Facebook: Hot take: most brand content is too polished. Real,…"
+            - generic [ref=e1255]:
+              - generic "facebook" [ref=e1256]: 📘
+              - generic [ref=e1257]: agent-23
+              - generic [ref=e1258]: 1m
+          - generic [ref=e1259] [cursor=pointer]:
+            - generic [ref=e1260]: client-08
+            - generic [ref=e1261]: "Facebook: Hot take: most brand content is too polished. Real,…"
+            - generic [ref=e1262]:
+              - generic "facebook" [ref=e1263]: 📘
+              - generic [ref=e1264]: agent-24
+              - generic [ref=e1265]: 1m
+          - generic [ref=e1266] [cursor=pointer]:
+            - generic [ref=e1267]: client-08
+            - generic [ref=e1268]: "Facebook: Two truths and a lie about social media marketing. C…"
+            - generic [ref=e1269]:
+              - generic "facebook" [ref=e1270]: 📘
+              - generic [ref=e1271]: agent-25
+              - generic [ref=e1272]: 1m
+          - generic [ref=e1273] [cursor=pointer]:
+            - generic [ref=e1274]: client-08
+            - generic [ref=e1275]: "Facebook: Two truths and a lie about social media marketing. C…"
+            - generic [ref=e1276]:
+              - generic "facebook" [ref=e1277]: 📘
+              - generic [ref=e1278]: agent-26
+              - generic [ref=e1279]: 2m
+          - generic [ref=e1280] [cursor=pointer]:
+            - generic [ref=e1281]: client-08
+            - generic [ref=e1282]: "Facebook: Two truths and a lie about social media marketing. C…"
+            - generic [ref=e1283]:
+              - generic "facebook" [ref=e1284]: 📘
+              - generic [ref=e1285]: agent-27
+              - generic [ref=e1286]: 2m
+          - generic [ref=e1287] [cursor=pointer]:
+            - generic [ref=e1288]: client-08
+            - generic [ref=e1289]: "Facebook: Tag a colleague who would actually read a 2,000-word…"
+            - generic [ref=e1290]:
+              - generic "facebook" [ref=e1291]: 📘
+              - generic [ref=e1292]: agent-28
+              - generic [ref=e1293]: 2m
+          - generic [ref=e1294] [cursor=pointer]:
+            - generic [ref=e1295]: client-08
+            - generic [ref=e1296]: "Instagram: Tag a colleague who would actually read a 2,000-word…"
+            - generic [ref=e1297]:
+              - generic "instagram" [ref=e1298]: 📷
+              - generic [ref=e1299]: agent-29
+              - generic [ref=e1300]: 2m
+          - generic [ref=e1301] [cursor=pointer]:
+            - generic [ref=e1302]: client-08
+            - generic [ref=e1303]: "Instagram: Tag a colleague who would actually read a 2,000-word…"
+            - generic [ref=e1304]:
+              - generic "instagram" [ref=e1305]: 📷
+              - generic [ref=e1306]: agent-30
+              - generic [ref=e1307]: 2m
+          - generic [ref=e1308] [cursor=pointer]:
+            - generic [ref=e1309]: client-08
+            - generic [ref=e1310]: "Instagram: We're curious — how many platforms is your team acti…"
+            - generic [ref=e1311]:
+              - generic "instagram" [ref=e1312]: 📷
+              - generic [ref=e1313]: agent-31
+              - generic [ref=e1314]: 3m
+          - generic [ref=e1315] [cursor=pointer]:
+            - generic [ref=e1316]: client-08
+            - generic [ref=e1317]: "Instagram: We're curious — how many platforms is your team acti…"
+            - generic [ref=e1318]:
+              - generic "instagram" [ref=e1319]: 📷
+              - generic [ref=e1320]: agent-32
+              - generic [ref=e1321]: 3m
+          - generic [ref=e1322] [cursor=pointer]:
+            - generic [ref=e1323]: client-09
+            - generic [ref=e1324]: "Instagram: We're curious — how many platforms is your team acti…"
+            - generic [ref=e1325]:
+              - generic "instagram" [ref=e1326]: 📷
+              - generic [ref=e1327]: agent-33
+              - generic [ref=e1328]: 3m
+          - generic [ref=e1329] [cursor=pointer]:
+            - generic [ref=e1330]: client-09
+            - generic [ref=e1331]: "Instagram: We're excited to announce our partnership with one o…"
+            - generic [ref=e1332]:
+              - generic "instagram" [ref=e1333]: 📷
+              - generic [ref=e1334]: agent-34
+              - generic [ref=e1335]: 3m
+          - generic [ref=e1336] [cursor=pointer]:
+            - generic [ref=e1337]: client-09
+            - generic [ref=e1338]: "X: We're excited to announce our partnership with one o…"
+            - generic [ref=e1339]:
+              - generic "x" [ref=e1340]: 🐦
+              - generic [ref=e1341]: agent-35
+              - generic [ref=e1342]: 3m
+          - generic [ref=e1343] [cursor=pointer]:
+            - generic [ref=e1344]: client-09
+            - generic [ref=e1345]: "X: We're excited to announce our partnership with one o…"
+            - generic [ref=e1346]:
+              - generic "x" [ref=e1347]: 🐦
+              - generic [ref=e1348]: agent-01
+              - generic [ref=e1349]: 4m
+          - generic [ref=e1350] [cursor=pointer]:
+            - generic [ref=e1351]: client-09
+            - generic [ref=e1352]: "X: We're excited to announce our partnership with one o…"
+            - generic [ref=e1353]:
+              - generic "x" [ref=e1354]: 🐦
+              - generic [ref=e1355]: agent-02
+              - generic [ref=e1356]: 4m
+          - generic [ref=e1357] [cursor=pointer]:
+            - generic [ref=e1358]: client-09
+            - generic [ref=e1359]: "X: Our Q2 results are in. Growth across every channel,…"
+            - generic [ref=e1360]:
+              - generic "x" [ref=e1361]: 🐦
+              - generic [ref=e1362]: agent-03
+              - generic [ref=e1363]: 4m
+          - generic [ref=e1364] [cursor=pointer]:
+            - generic [ref=e1365]: client-09
+            - generic [ref=e1366]: "X: Our Q2 results are in. Growth across every channel,…"
+            - generic [ref=e1367]:
+              - generic "x" [ref=e1368]: 🐦
+              - generic [ref=e1369]: agent-04
+              - generic [ref=e1370]: 4m
+          - generic [ref=e1371] [cursor=pointer]:
+            - generic [ref=e1372]: client-09
+            - generic [ref=e1373]: "X: Our Q2 results are in. Growth across every channel,…"
+            - generic [ref=e1374]:
+              - generic "x" [ref=e1375]: 🐦
+              - generic [ref=e1376]: agent-05
+              - generic [ref=e1377]: 5m
+          - generic [ref=e1378] [cursor=pointer]:
+            - generic [ref=e1379]: client-09
+            - generic [ref=e1380]: "X: Huge milestone: we just crossed 10,000 active users.…"
+            - generic [ref=e1381]:
+              - generic "x" [ref=e1382]: 🐦
+              - generic [ref=e1383]: agent-06
+              - generic [ref=e1384]: 5m
+          - generic [ref=e1385] [cursor=pointer]:
+            - generic [ref=e1386]: client-10
+            - generic [ref=e1387]: "X: Huge milestone: we just crossed 10,000 active users.…"
+            - generic [ref=e1388]:
+              - generic "x" [ref=e1389]: 🐦
+              - generic [ref=e1390]: agent-07
+              - generic [ref=e1391]: 5m
+          - generic [ref=e1392] [cursor=pointer]:
+            - generic [ref=e1393]: client-10
+            - generic [ref=e1394]: "X: Huge milestone: we just crossed 10,000 active users.…"
+            - generic [ref=e1395]:
+              - generic "x" [ref=e1396]: 🐦
+              - generic [ref=e1397]: agent-08
+              - generic [ref=e1398]: 5m
+          - generic [ref=e1399] [cursor=pointer]:
+            - generic [ref=e1400]: client-10
+            - generic [ref=e1401]: "X: We're hiring. If you're passionate about building th…"
+            - generic [ref=e1402]:
+              - generic "x" [ref=e1403]: 🐦
+              - generic [ref=e1404]: agent-09
+              - generic [ref=e1405]: 5m
+          - generic [ref=e1406] [cursor=pointer]:
+            - generic [ref=e1407]: client-10
+            - generic [ref=e1408]: "Linkedin: We're hiring. If you're passionate about building th…"
+            - generic [ref=e1409]:
+              - generic "linkedin" [ref=e1410]: 💼
+              - generic [ref=e1411]: agent-10
+              - generic [ref=e1412]: 6m
+          - generic [ref=e1413] [cursor=pointer]:
+            - generic [ref=e1414]: client-10
+            - generic [ref=e1415]: "Linkedin: We're hiring. If you're passionate about building th…"
+            - generic [ref=e1416]:
+              - generic "linkedin" [ref=e1417]: 💼
+              - generic [ref=e1418]: agent-11
+              - generic [ref=e1419]: 6m
+          - generic [ref=e1420] [cursor=pointer]:
+            - generic [ref=e1421]: client-10
+            - generic [ref=e1422]: "Linkedin: Event recap: here's everything that happened at our…"
+            - generic [ref=e1423]:
+              - generic "linkedin" [ref=e1424]: 💼
+              - generic [ref=e1425]: agent-12
+              - generic [ref=e1426]: 6m
+          - generic [ref=e1427] [cursor=pointer]:
+            - generic [ref=e1428]: client-10
+            - generic [ref=e1429]: "Linkedin: Event recap: here's everything that happened at our…"
+            - generic [ref=e1430]:
+              - generic "linkedin" [ref=e1431]: 💼
+              - generic [ref=e1432]: agent-13
+              - generic [ref=e1433]: 6m
+          - generic [ref=e1434] [cursor=pointer]:
+            - generic [ref=e1435]: client-10
+            - generic [ref=e1436]: "Linkedin: Event recap: here's everything that happened at our…"
+            - generic [ref=e1437]:
+              - generic "linkedin" [ref=e1438]: 💼
+              - generic [ref=e1439]: agent-14
+              - generic [ref=e1440]: 7m
+          - generic [ref=e1441] [cursor=pointer]:
+            - generic [ref=e1442]: client-10
+            - generic [ref=e1443]: "Linkedin: New integration live: connect your existing workflow…"
+            - generic [ref=e1444]:
+              - generic "linkedin" [ref=e1445]: 💼
+              - generic [ref=e1446]: agent-15
+              - generic [ref=e1447]: 7m
+      - generic [ref=e1449]:
+        - generic [ref=e1451]:
+          - generic [ref=e1452]: FAILED
+          - generic [ref=e1453]:
+            - generic [ref=e1454]: 3/hr
+            - generic [ref=e1455]: "10"
+        - generic [ref=e1457]:
+          - generic [ref=e1458] [cursor=pointer]:
+            - generic [ref=e1459]: client-11
+            - generic [ref=e1460]: "Linkedin: New integration live: connect your existing workflow…"
+            - generic [ref=e1461]:
+              - generic "linkedin" [ref=e1462]: 💼
+              - generic [ref=e1463]: agent-16
+              - generic [ref=e1464]: 7m
+          - generic [ref=e1465] [cursor=pointer]:
+            - generic [ref=e1466]: client-11
+            - generic [ref=e1467]: "Linkedin: New integration live: connect your existing workflow…"
+            - generic [ref=e1468]:
+              - generic "linkedin" [ref=e1469]: 💼
+              - generic [ref=e1470]: agent-17
+              - generic [ref=e1471]: 7m
+          - generic [ref=e1472] [cursor=pointer]:
+            - generic [ref=e1473]: client-11
+            - generic [ref=e1474]: "Facebook: Big news! Our latest product drop is live — and it's…"
+            - generic [ref=e1475]:
+              - generic "facebook" [ref=e1476]: 📘
+              - generic [ref=e1477]: agent-18
+              - generic [ref=e1478]: 7m
+          - generic [ref=e1479] [cursor=pointer]:
+            - generic [ref=e1480]: client-11
+            - generic [ref=e1481]: "Facebook: Big news! Our latest product drop is live — and it's…"
+            - generic [ref=e1482]:
+              - generic "facebook" [ref=e1483]: 📘
+              - generic [ref=e1484]: agent-19
+              - generic [ref=e1485]: 8m
+          - generic [ref=e1486] [cursor=pointer]:
+            - generic [ref=e1487]: client-11
+            - generic [ref=e1488]: "Facebook: Big news! Our latest product drop is live — and it's…"
+            - generic [ref=e1489]:
+              - generic "facebook" [ref=e1490]: 📘
+              - generic [ref=e1491]: agent-20
+              - generic [ref=e1492]: 8m
+          - generic [ref=e1493] [cursor=pointer]:
+            - generic [ref=e1494]: client-11
+            - generic [ref=e1495]: "Facebook: Big news! Our latest product drop is live — and it's…"
+            - generic [ref=e1496]:
+              - generic "facebook" [ref=e1497]: 📘
+              - generic [ref=e1498]: agent-21
+              - generic [ref=e1499]: 8m
+          - generic [ref=e1500] [cursor=pointer]:
+            - generic [ref=e1501]: client-11
+            - generic [ref=e1502]: "Facebook: Limited time offer: 20% off all plans this week only…"
+            - generic [ref=e1503]:
+              - generic "facebook" [ref=e1504]: 📘
+              - generic [ref=e1505]: agent-22
+              - generic [ref=e1506]: 8m
+          - generic [ref=e1507] [cursor=pointer]:
+            - generic [ref=e1508]: client-11
+            - generic [ref=e1509]: "Facebook: Limited time offer: 20% off all plans this week only…"
+            - generic [ref=e1510]:
+              - generic "facebook" [ref=e1511]: 📘
+              - generic [ref=e1512]: agent-23
+              - generic [ref=e1513]: 9m
+          - generic [ref=e1514] [cursor=pointer]:
+            - generic [ref=e1515]: client-11
+            - generic [ref=e1516]: "Facebook: Limited time offer: 20% off all plans this week only…"
+            - generic [ref=e1517]:
+              - generic "facebook" [ref=e1518]: 📘
+              - generic [ref=e1519]: agent-24
+              - generic [ref=e1520]: 9m
+          - generic [ref=e1521] [cursor=pointer]:
+            - generic [ref=e1522]: client-12
+            - generic [ref=e1523]: "Facebook: Introducing our summer collection. Crafted for perfo…"
+            - generic [ref=e1524]:
+              - generic "facebook" [ref=e1525]: 📘
+              - generic [ref=e1526]: agent-25
+              - generic [ref=e1527]: 9m

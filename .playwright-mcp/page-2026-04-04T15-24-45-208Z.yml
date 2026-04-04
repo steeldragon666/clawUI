@@ -1,0 +1,352 @@
+- generic [ref=e3]:
+  - navigation [ref=e5]:
+    - link "Fleet" [ref=e6] [cursor=pointer]:
+      - /url: /
+      - img [ref=e8]
+      - generic: Fleet
+    - link "Pipeline" [ref=e10] [cursor=pointer]:
+      - /url: /pipeline
+      - img [ref=e11]
+      - generic: Pipeline
+    - link "Calendar" [ref=e12] [cursor=pointer]:
+      - /url: /calendar
+      - img [ref=e13]
+      - generic: Calendar
+    - link "Clients" [ref=e15] [cursor=pointer]:
+      - /url: /clients
+      - img [ref=e16]
+      - generic: Clients
+    - link "Settings" [ref=e21] [cursor=pointer]:
+      - /url: /settings
+      - img [ref=e22]
+      - generic: Settings
+    - generic [ref=e25]: C
+  - banner [ref=e26]:
+    - generic [ref=e27]:
+      - generic [ref=e28]:
+        - generic [ref=e29]: Agents Online
+        - generic [ref=e30]: 43/50
+      - generic [ref=e31]:
+        - generic [ref=e32]: Tasks Active
+        - generic [ref=e33]: "30"
+      - generic [ref=e34]:
+        - generic [ref=e35]: Posts Today
+        - generic [ref=e36]: "65"
+      - generic [ref=e37]:
+        - generic [ref=e38]: Queue Depth
+        - generic [ref=e39]: "60"
+      - generic [ref=e40]:
+        - generic [ref=e41]: Error Rate
+        - generic [ref=e42]: 5.0%
+      - generic [ref=e43]:
+        - generic [ref=e44]: API Budget
+        - generic [ref=e45]: 34%
+    - generic [ref=e46]:
+      - generic [ref=e47]: 02:24:44
+      - button "45 unacknowledged alerts" [ref=e48]:
+        - img [ref=e49]
+        - generic [ref=e52]: "45"
+      - generic [ref=e55]: Offline
+  - main [ref=e56]:
+    - generic [ref=e57]:
+      - generic [ref=e58]:
+        - generic [ref=e59]:
+          - heading "Live Agent Fleet" [level=2] [ref=e61]
+          - generic [ref=e63]: Initializing fleet telemetry...
+        - generic [ref=e64]:
+          - heading "Alert Feed" [level=2] [ref=e66]
+          - generic [ref=e68]:
+            - generic [ref=e69]:
+              - button "ALL" [ref=e70]
+              - button "CRITICAL25" [ref=e71]
+              - button "WARNING20" [ref=e72]
+              - button "INFO0" [ref=e73]
+              - button "RESOLVED5" [ref=e74]
+            - generic [ref=e75]:
+              - generic [ref=e77]:
+                - generic [ref=e79]:
+                  - generic [ref=e80]: "SLA breach risk: 3 tasks have been queued for over 2 hours."
+                  - generic [ref=e81] [cursor=pointer]: client:client-08
+                - generic [ref=e82]: 7m ago
+              - generic [ref=e84]:
+                - generic [ref=e86]:
+                  - generic [ref=e87]: Client content calendar falling behind — 5 posts overdue.
+                  - generic [ref=e88] [cursor=pointer]: client:client-09
+                - generic [ref=e89]: 11m ago
+              - generic [ref=e91]:
+                - generic [ref=e93]:
+                  - generic [ref=e94]: Scheduled post window closing in 15 minutes — agent unavailable.
+                  - generic [ref=e95] [cursor=pointer]: client:client-10
+                - generic [ref=e96]: 14m ago
+              - generic [ref=e98]:
+                - generic [ref=e100]:
+                  - generic [ref=e101]: "SLA threshold: average task duration exceeded target by 40%."
+                  - generic [ref=e102] [cursor=pointer]: client:client-11
+                - generic [ref=e103]: 18m ago
+              - generic [ref=e105]:
+                - generic [ref=e107]:
+                  - generic [ref=e108]: Approval queue backlog exceeding 4-hour SLA window.
+                  - generic [ref=e109] [cursor=pointer]: client:client-12
+                - generic [ref=e110]: 21m ago
+              - generic [ref=e112]:
+                - generic [ref=e114]:
+                  - generic [ref=e115]: Client posting frequency dropped below agreed minimum.
+                  - generic [ref=e116] [cursor=pointer]: client:client-13
+                - generic [ref=e117]: 25m ago
+              - generic [ref=e119]:
+                - generic [ref=e121]:
+                  - generic [ref=e122]: Task throughput below SLA floor for the past 30 minutes.
+                  - generic [ref=e123] [cursor=pointer]: client:client-14
+                - generic [ref=e124]: 28m ago
+              - generic [ref=e126]:
+                - generic [ref=e128]:
+                  - generic [ref=e129]: Agent auto-recovered after restart. Task queue resuming normally.
+                  - generic [ref=e130] [cursor=pointer]: system:system
+                - generic [ref=e131]: 1h ago
+              - generic [ref=e133]:
+                - generic [ref=e135]:
+                  - generic [ref=e136]: Rate limit backoff lifted — API calls resuming at full rate.
+                  - generic [ref=e137] [cursor=pointer]: system:system
+                - generic [ref=e138]: 1h ago
+              - generic [ref=e140]:
+                - generic [ref=e142]:
+                  - generic [ref=e143]: Server disk cleanup completed. Usage back to 61%.
+                  - generic [ref=e144] [cursor=pointer]: system:system
+                - generic [ref=e145]: 1h ago
+              - generic [ref=e147]:
+                - generic [ref=e149]:
+                  - generic [ref=e150]: Network latency returned to baseline after routing fix.
+                  - generic [ref=e151] [cursor=pointer]: system:system
+                - generic [ref=e152]: 1h ago
+              - generic [ref=e154]:
+                - generic [ref=e156]:
+                  - generic [ref=e157]: Failed tasks re-queued successfully after dependency resolved.
+                  - generic [ref=e158] [cursor=pointer]: system:system
+                - generic [ref=e159]: 1h ago
+              - generic [ref=e161]:
+                - generic [ref=e163]:
+                  - generic [ref=e164]: Agent heartbeat timeout — no response for 90+ seconds.
+                  - generic [ref=e165] [cursor=pointer]: agent:agent-44
+                - generic [ref=e166]: 1h ago
+              - generic [ref=e168]:
+                - generic [ref=e170]:
+                  - generic [ref=e171]: Agent crashed with unhandled exception. Auto-restart attempted.
+                  - generic [ref=e172] [cursor=pointer]: agent:agent-45
+                - generic [ref=e173]: 1h ago
+              - generic [ref=e175]:
+                - generic [ref=e177]:
+                  - generic [ref=e178]: Agent CPU pegged at 99% — task execution stalled.
+                  - generic [ref=e179] [cursor=pointer]: agent:agent-46
+                - generic [ref=e180]: 1h ago
+              - generic [ref=e182]:
+                - generic [ref=e184]:
+                  - generic [ref=e185]: Agent lost connection to task queue broker.
+                  - generic [ref=e186] [cursor=pointer]: agent:agent-47
+                - generic [ref=e187]: 1h ago
+              - generic [ref=e189]:
+                - generic [ref=e191]:
+                  - generic [ref=e192]: Agent memory limit exceeded — OOM kill triggered.
+                  - generic [ref=e193] [cursor=pointer]: agent:agent-48
+                - generic [ref=e194]: 1h ago
+              - generic [ref=e196]:
+                - generic [ref=e198]:
+                  - generic [ref=e199]: Agent heartbeat timeout — no response for 90+ seconds.
+                  - generic [ref=e200] [cursor=pointer]: agent:agent-49
+                - generic [ref=e201]: 1h ago
+              - generic [ref=e203]:
+                - generic [ref=e205]:
+                  - generic [ref=e206]: Agent crashed with unhandled exception. Auto-restart attempted.
+                  - generic [ref=e207] [cursor=pointer]: agent:agent-50
+                - generic [ref=e208]: 2h ago
+              - generic [ref=e210]:
+                - generic [ref=e212]:
+                  - generic [ref=e213]: Agent CPU pegged at 99% — task execution stalled.
+                  - generic [ref=e214] [cursor=pointer]: agent:agent-44
+                - generic [ref=e215]: 2h ago
+              - generic [ref=e217]:
+                - generic [ref=e219]:
+                  - generic [ref=e220]: Agent lost connection to task queue broker.
+                  - generic [ref=e221] [cursor=pointer]: agent:agent-45
+                - generic [ref=e222]: 2h ago
+              - generic [ref=e224]:
+                - generic [ref=e226]:
+                  - generic [ref=e227]: Agent memory limit exceeded — OOM kill triggered.
+                  - generic [ref=e228] [cursor=pointer]: agent:agent-46
+                - generic [ref=e229]: 2h ago
+              - generic [ref=e231]:
+                - generic [ref=e233]:
+                  - generic [ref=e234]: Agent heartbeat timeout — no response for 90+ seconds.
+                  - generic [ref=e235] [cursor=pointer]: agent:agent-47
+                - generic [ref=e236]: 2h ago
+              - generic [ref=e238]:
+                - generic [ref=e240]:
+                  - generic [ref=e241]: Agent crashed with unhandled exception. Auto-restart attempted.
+                  - generic [ref=e242] [cursor=pointer]: agent:agent-48
+                - generic [ref=e243]: 2h ago
+              - generic [ref=e245]:
+                - generic [ref=e247]:
+                  - generic [ref=e248]: Agent CPU pegged at 99% — task execution stalled.
+                  - generic [ref=e249] [cursor=pointer]: agent:agent-49
+                - generic [ref=e250]: 2h ago
+              - generic [ref=e252]:
+                - generic [ref=e254]:
+                  - generic [ref=e255]: Agent lost connection to task queue broker.
+                  - generic [ref=e256] [cursor=pointer]: agent:agent-50
+                - generic [ref=e257]: 2h ago
+              - generic [ref=e259]:
+                - generic [ref=e261]:
+                  - generic [ref=e262]: Agent memory limit exceeded — OOM kill triggered.
+                  - generic [ref=e263] [cursor=pointer]: agent:agent-44
+                - generic [ref=e264]: 2h ago
+              - generic [ref=e266]:
+                - generic [ref=e268]:
+                  - generic [ref=e269]: Task failed after maximum retries exhausted.
+                  - generic [ref=e270] [cursor=pointer]: task:task-191
+                - generic [ref=e271]: 2h ago
+              - generic [ref=e273]:
+                - generic [ref=e275]:
+                  - generic [ref=e276]: Task execution timeout — exceeded 120s limit.
+                  - generic [ref=e277] [cursor=pointer]: task:task-192
+                - generic [ref=e278]: 2h ago
+              - generic [ref=e280]:
+                - generic [ref=e282]:
+                  - generic [ref=e283]: Platform API rejected content — policy violation.
+                  - generic [ref=e284] [cursor=pointer]: task:task-193
+                - generic [ref=e285]: 2h ago
+              - generic [ref=e287]:
+                - generic [ref=e289]:
+                  - generic [ref=e290]: Task cancelled due to upstream dependency failure.
+                  - generic [ref=e291] [cursor=pointer]: task:task-194
+                - generic [ref=e292]: 2h ago
+              - generic [ref=e294]:
+                - generic [ref=e296]:
+                  - generic [ref=e297]: Scheduled task missed execution window.
+                  - generic [ref=e298] [cursor=pointer]: task:task-195
+                - generic [ref=e299]: 2h ago
+              - generic [ref=e301]:
+                - generic [ref=e303]:
+                  - generic [ref=e304]: Task failed after maximum retries exhausted.
+                  - generic [ref=e305] [cursor=pointer]: task:task-196
+                - generic [ref=e306]: 2h ago
+              - generic [ref=e308]:
+                - generic [ref=e310]:
+                  - generic [ref=e311]: Task execution timeout — exceeded 120s limit.
+                  - generic [ref=e312] [cursor=pointer]: task:task-197
+                - generic [ref=e313]: 2h ago
+              - generic [ref=e315]:
+                - generic [ref=e317]:
+                  - generic [ref=e318]: Platform API rejected content — policy violation.
+                  - generic [ref=e319] [cursor=pointer]: task:task-198
+                - generic [ref=e320]: 2h ago
+              - generic [ref=e322]:
+                - generic [ref=e324]:
+                  - generic [ref=e325]: Task cancelled due to upstream dependency failure.
+                  - generic [ref=e326] [cursor=pointer]: task:task-199
+                - generic [ref=e327]: 2h ago
+              - generic [ref=e329]:
+                - generic [ref=e331]:
+                  - generic [ref=e332]: Scheduled task missed execution window.
+                  - generic [ref=e333] [cursor=pointer]: task:task-200
+                - generic [ref=e334]: 2h ago
+              - generic [ref=e336]:
+                - generic [ref=e338]:
+                  - generic [ref=e339]: X (Twitter) API rate limit at 85% — throttling requests.
+                  - generic [ref=e340] [cursor=pointer]: client:client-01
+                - generic [ref=e341]: 2h ago
+              - generic [ref=e343]:
+                - generic [ref=e345]:
+                  - generic [ref=e346]: "LinkedIn API: approaching daily post quota limit."
+                  - generic [ref=e347] [cursor=pointer]: client:client-02
+                - generic [ref=e348]: 2h ago
+              - generic [ref=e350]:
+                - generic [ref=e352]:
+                  - generic [ref=e353]: "Facebook Graph API: 429 responses increasing — backing off."
+                  - generic [ref=e354] [cursor=pointer]: client:client-03
+                - generic [ref=e355]: 2h ago
+              - generic [ref=e357]:
+                - generic [ref=e359]:
+                  - generic [ref=e360]: "Instagram posting limit: 18 of 25 daily posts used."
+                  - generic [ref=e361] [cursor=pointer]: client:client-04
+                - generic [ref=e362]: 3h ago
+              - generic [ref=e364]:
+                - generic [ref=e366]:
+                  - generic [ref=e367]: Platform API token nearing expiry — refresh required within 1 hour.
+                  - generic [ref=e368] [cursor=pointer]: client:client-05
+                - generic [ref=e369]: 3h ago
+              - generic [ref=e371]:
+                - generic [ref=e373]:
+                  - generic [ref=e374]: X (Twitter) API rate limit at 85% — throttling requests.
+                  - generic [ref=e375] [cursor=pointer]: client:client-06
+                - generic [ref=e376]: 3h ago
+              - generic [ref=e378]:
+                - generic [ref=e380]:
+                  - generic [ref=e381]: "LinkedIn API: approaching daily post quota limit."
+                  - generic [ref=e382] [cursor=pointer]: client:client-07
+                - generic [ref=e383]: 3h ago
+              - generic [ref=e385]:
+                - generic [ref=e387]:
+                  - generic [ref=e388]: "Facebook Graph API: 429 responses increasing — backing off."
+                  - generic [ref=e389] [cursor=pointer]: client:client-08
+                - generic [ref=e390]: 3h ago
+              - generic [ref=e392]:
+                - generic [ref=e394]:
+                  - generic [ref=e395]: Server disk usage at 88% — cleanup recommended.
+                  - generic [ref=e396] [cursor=pointer]: server:srv-alpha-01
+                - generic [ref=e397]: 3h ago
+              - generic [ref=e399]:
+                - generic [ref=e401]:
+                  - generic [ref=e402]: "Server load average elevated: 4.2 over 5-minute window."
+                  - generic [ref=e403] [cursor=pointer]: server:srv-alpha-02
+                - generic [ref=e404]: 3h ago
+              - generic [ref=e406]:
+                - generic [ref=e408]:
+                  - generic [ref=e409]: "Server memory pressure: swap in use, performance degraded."
+                  - generic [ref=e410] [cursor=pointer]: server:srv-beta-01
+                - generic [ref=e411]: 3h ago
+              - generic [ref=e413]:
+                - generic [ref=e415]:
+                  - generic [ref=e416]: Server network latency spike detected — P99 > 800ms.
+                  - generic [ref=e417] [cursor=pointer]: server:srv-beta-02
+                - generic [ref=e418]: 3h ago
+              - generic [ref=e420]:
+                - generic [ref=e422]:
+                  - generic [ref=e423]: Server TLS certificate expires in 7 days — renewal pending.
+                  - generic [ref=e424] [cursor=pointer]: server:srv-alpha-01
+                - generic [ref=e425]: 3h ago
+      - generic [ref=e427]:
+        - generic [ref=e428]:
+          - generic [ref=e429]: Posts Published Today
+          - generic [ref=e430]: "65"
+          - generic [ref=e431]:
+            - generic [ref=e432]: ▲ +12 vs yesterday
+            - img [ref=e436]
+        - generic [ref=e442]:
+          - generic [ref=e443]: Queue Depth
+          - generic [ref=e444]: "60"
+          - generic [ref=e445]:
+            - generic [ref=e446]: ▲ -3 vs 1hr ago
+            - img [ref=e450]
+        - generic [ref=e456]:
+          - generic [ref=e457]: Avg Task Duration
+          - generic [ref=e458]: 331s
+          - generic [ref=e459]:
+            - generic [ref=e460]: ▲ -8s vs 7d avg
+            - img [ref=e464]
+        - generic [ref=e470]:
+          - generic [ref=e471]: Fleet Error Rate
+          - generic [ref=e472]: 5.0%
+          - generic [ref=e473]:
+            - generic [ref=e474]: ▲ -0.5% vs yesterday
+            - img [ref=e478]
+        - generic [ref=e484]:
+          - generic [ref=e485]: API Budget Consumed
+          - generic [ref=e486]: 34%
+          - generic [ref=e487]:
+            - generic [ref=e488]: ▼ proj. 67% EOD
+            - img [ref=e492]
+        - generic [ref=e498]:
+          - generic [ref=e499]: Active Clients
+          - generic [ref=e500]: "20"
+          - generic [ref=e501]:
+            - generic [ref=e502]: ▲ +2 vs yesterday
+            - img [ref=e506]

@@ -1,0 +1,32 @@
+[      22ms] [WARNING] API unavailable, using mock agents @ http://localhost:5173/src/hooks/useAgents.ts:19
+[      23ms] [WARNING] API unavailable, using mock agents @ http://localhost:5173/src/hooks/useAgents.ts:19
+[      23ms] [WARNING] API unavailable, using mock agents @ http://localhost:5173/src/hooks/useAgents.ts:19
+[      23ms] [WARNING] API unavailable, using mock tasks @ http://localhost:5173/src/hooks/useTasks.ts:18
+[      23ms] [WARNING] API unavailable, using mock agents @ http://localhost:5173/src/hooks/useAgents.ts:19
+[      23ms] [WARNING] API unavailable, using mock tasks @ http://localhost:5173/src/hooks/useTasks.ts:18
+[      23ms] [WARNING] API unavailable, using mock agents @ http://localhost:5173/src/hooks/useAgents.ts:19
+[      23ms] [WARNING] API unavailable, using mock agents @ http://localhost:5173/src/hooks/useAgents.ts:19
+[      23ms] [WARNING] API unavailable, using mock tasks @ http://localhost:5173/src/hooks/useTasks.ts:18
+[      23ms] [WARNING] API unavailable, using mock tasks @ http://localhost:5173/src/hooks/useTasks.ts:18
+[      23ms] [WARNING] API unavailable, using mock agents @ http://localhost:5173/src/hooks/useAgents.ts:19
+[      23ms] [WARNING] API unavailable, using mock agents @ http://localhost:5173/src/hooks/useAgents.ts:19
+[     157ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=d4cd43e1:20102
+[     190ms] [ERROR] Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 02:55 @ http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=d4cd43e1:4924
+[     209ms] [WARNING] WebSocket connection to 'ws://localhost:3001/socket.io/?EIO=4&transport=websocket' failed: WebSocket is closed before the connection is established. @ http://localhost:5173/node_modules/.vite/deps/socket__io-client.js?v=de0d25df:1499
+[    3206ms] [WARNING] API unavailable, using mock agents @ http://localhost:5173/src/hooks/useAgents.ts?t=1775303684926:22
+[    3206ms] [WARNING] API unavailable, using mock agents @ http://localhost:5173/src/hooks/useAgents.ts?t=1775303684926:22
+[    3207ms] [WARNING] API unavailable, using mock agents @ http://localhost:5173/src/hooks/useAgents.ts?t=1775303684926:22
+[    3207ms] [WARNING] API unavailable, using mock tasks @ http://localhost:5173/src/hooks/useTasks.ts?t=1775303691217:21
+[    3207ms] [WARNING] API unavailable, using mock tasks @ http://localhost:5173/src/hooks/useTasks.ts?t=1775303691217:21
+[    3207ms] [WARNING] API unavailable, using mock agents @ http://localhost:5173/src/hooks/useAgents.ts?t=1775303684926:22
+[    3221ms] [ERROR] Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 02:55 @ http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=d4cd43e1:4924
+[    3235ms] [WARNING] API unavailable, using mock agents @ http://localhost:5173/src/hooks/useAgents.ts?t=1775303684926:22
+[    3235ms] [WARNING] API unavailable, using mock agents @ http://localhost:5173/src/hooks/useAgents.ts?t=1775303684926:22
+[    3235ms] [WARNING] API unavailable, using mock agents @ http://localhost:5173/src/hooks/useAgents.ts?t=1775303684926:22
+[    3236ms] [WARNING] API unavailable, using mock tasks @ http://localhost:5173/src/hooks/useTasks.ts?t=1775303691217:21
+[    3236ms] [WARNING] API unavailable, using mock tasks @ http://localhost:5173/src/hooks/useTasks.ts?t=1775303691217:21
+[    3236ms] [WARNING] API unavailable, using mock agents @ http://localhost:5173/src/hooks/useAgents.ts?t=1775303684926:22
+[    3254ms] [ERROR] Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 02:55 @ http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=d4cd43e1:4924
+[   20231ms] [WARNING] WebSocket connection to 'ws://localhost:3001/socket.io/?EIO=4&transport=websocket' failed: WebSocket is closed before the connection is established. @ http://localhost:5173/node_modules/.vite/deps/socket__io-client.js?v=de0d25df:1499
+[   41114ms] [WARNING] WebSocket connection to 'ws://localhost:3001/socket.io/?EIO=4&transport=websocket' failed: WebSocket is closed before the connection is established. @ http://localhost:5173/node_modules/.vite/deps/socket__io-client.js?v=de0d25df:1499
+[   63671ms] [WARNING] WebSocket connection to 'ws://localhost:3001/socket.io/?EIO=4&transport=websocket' failed: WebSocket is closed before the connection is established. @ http://localhost:5173/node_modules/.vite/deps/socket__io-client.js?v=de0d25df:1499
