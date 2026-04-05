@@ -4,3 +4,6 @@ dist/
 *.local
 .turbo/
 .gstack/
+.playwright-mcp/
+*.png
+*.jpeg

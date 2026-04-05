@@ -53,7 +53,7 @@ export function NavigationRail() {
 
       <div className="mt-auto px-3">
         <span className="font-mono text-[10px] text-muted whitespace-nowrap">
-          {expanded ? 'CARBON PROJECT' : 'C'}
+          {expanded ? 'OMNISCIENT AI' : 'O'}
         </span>
       </div>
     </motion.nav>
