@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { AppShell } from './components/layout/AppShell';
 import { FleetView } from './pages/FleetView';
 import { PipelineView } from './pages/PipelineView';
@@ -15,7 +15,7 @@ import { SettingsView } from './pages/SettingsView';
 
 export function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <Routes>
         <Route element={<AppShell />}>
           <Route path="/" element={<FleetView />} />
@@ -32,6 +32,6 @@ export function App() {
           <Route path="/settings" element={<SettingsView />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 }
