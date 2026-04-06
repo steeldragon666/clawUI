@@ -1,25 +1,88 @@
 import Redis from 'ioredis';
-import { AGENT_ID, setStatus } from './index';
+import type { AgentCommandType, AgentCommand } from '@omniscient/shared';
+import { AGENT_ID, setStatus, API_URL } from './index.js';
+import { taskExecutor } from './executor.js';
 
 const REDIS_URL = process.env.REDIS_URL || 'redis://localhost:6379';
-const redis = new Redis(REDIS_URL);
+const STREAM_KEY = `agent-commands:${AGENT_ID}`;
+const POLL_FALLBACK_MS = 10_000; // 10s HTTP polling fallback
 
-const STREAM_KEY = `agent-stream:${AGENT_ID}`;
+let redis: Redis | null = null;
+let stopped = false;
 
 /**
- * Worker-Side Command Listener using Redis Streams.
- * Reads commands from agent-stream:{agentId}.
- * Starts from '0' on boot to drain any queued commands, then reads new ones.
+ * Attempts to connect to Redis. Returns true if successful.
  */
-export function startCommandListener() {
-  console.log(`[COMMANDS] Listening on stream: ${STREAM_KEY}`);
+async function connectRedis(): Promise<boolean> {
+  return new Promise((resolve) => {
+    try {
+      const client = new Redis(REDIS_URL, {
+        maxRetriesPerRequest: 1,
+        retryStrategy: () => null, // Don't auto-retry on initial connect
+        lazyConnect: true,
+        connectTimeout: 3000,
+      });
 
-  // Start from '0' to drain backlog, then switch to '$' for new-only
-  let lastId = '0';
+      client.on('error', () => {
+        // Suppress connection errors during probe
+      });
+
+      client
+        .connect()
+        .then(() => {
+          redis = client;
+          console.log(`[COMMANDS] Redis connected at ${REDIS_URL}`);
+          resolve(true);
+        })
+        .catch(() => {
+          client.disconnect();
+          resolve(false);
+        });
+    } catch {
+      resolve(false);
+    }
+  });
+}
+
+/**
+ * Start the command listener.
+ * Tries Redis Streams first; falls back to HTTP polling if Redis is unavailable.
+ */
+export async function startCommandListener(): Promise<void> {
+  stopped = false;
+  const connected = await connectRedis();
+
+  if (connected) {
+    console.log(`[COMMANDS] Listening on Redis stream: ${STREAM_KEY}`);
+    redisStreamLoop();
+  } else {
+    console.warn(`[COMMANDS] Redis unavailable. Falling back to HTTP polling every ${POLL_FALLBACK_MS / 1000}s.`);
+    httpPollLoop();
+  }
+}
+
+/**
+ * Stop the command listener gracefully.
+ */
+export function stopCommandListener(): void {
+  stopped = true;
+  if (redis) {
+    redis.disconnect();
+    redis = null;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Redis Stream listener
+// ---------------------------------------------------------------------------
+
+async function redisStreamLoop(): Promise<void> {
+  let lastId = '0'; // Drain backlog first, then read new
 
   const poll = async () => {
+    if (stopped || !redis) return;
+
     try {
-      // XREAD COUNT 10 BLOCK 5000 — blocks up to 5s waiting for messages
       const result = await redis.xread('COUNT', 10, 'BLOCK', 5000, 'STREAMS', STREAM_KEY, lastId);
 
       if (result) {
@@ -27,79 +90,153 @@ export function startCommandListener() {
           for (const [messageId, fields] of messages) {
             lastId = messageId;
 
-            // Parse fields array into object: ['type', 'pause', 'payload', '{}', ...]
+            // Parse flat field array into object
             const data: Record<string, string> = {};
             for (let i = 0; i < fields.length; i += 2) {
               data[fields[i]] = fields[i + 1];
             }
 
-            const commandType = data.type;
-            console.log(`[COMMANDS] Received command: ${commandType} (stream ID: ${messageId})`);
+            const commandType = data.type as AgentCommandType;
+            const commandId = data.id || messageId;
+            console.log(`[COMMANDS] Received: ${commandType} (stream ID: ${messageId})`);
 
             handleCommand(commandType, data);
+            acknowledgeCommand(commandId);
 
-            // Acknowledge by trimming processed messages (keep stream lean)
-            await redis.xdel(STREAM_KEY, messageId);
+            // Trim processed message to keep stream lean
+            await redis!.xdel(STREAM_KEY, messageId);
           }
         }
       }
     } catch (err) {
-      if ((err as Error).message?.includes('NOGROUP')) {
-        // Stream doesn't exist yet — that's fine, wait for first command
-      } else {
-        console.error('[COMMANDS] Stream read error:', (err as Error).message);
+      const msg = (err as Error).message || '';
+      if (!msg.includes('NOGROUP')) {
+        console.error('[COMMANDS] Redis stream error:', msg);
       }
     }
 
-    // Continue polling (non-recursive to avoid stack overflow)
-    setTimeout(poll, 100);
+    // Continue (non-recursive setTimeout to avoid stack growth)
+    if (!stopped) {
+      setTimeout(poll, 100);
+    }
   };
 
   poll();
 }
 
-function handleCommand(type: string, data: Record<string, string>) {
+// ---------------------------------------------------------------------------
+// HTTP polling fallback
+// ---------------------------------------------------------------------------
+
+async function httpPollLoop(): Promise<void> {
+  const tick = async () => {
+    if (stopped) return;
+
+    try {
+      const res = await fetch(`${API_URL}/api/agents/${AGENT_ID}/commands`);
+      if (res.ok) {
+        const commands: AgentCommand[] = await res.json();
+        for (const cmd of commands) {
+          console.log(`[COMMANDS] Received (HTTP): ${cmd.type} (id: ${cmd.id})`);
+          handleCommand(cmd.type, { ...cmd, payload: JSON.stringify(cmd.payload || {}) } as unknown as Record<string, string>);
+          acknowledgeCommand(cmd.id);
+        }
+      }
+    } catch (err) {
+      console.warn(`[COMMANDS] HTTP poll failed: ${(err as Error).message}`);
+    }
+
+    if (!stopped) {
+      setTimeout(tick, POLL_FALLBACK_MS);
+    }
+  };
+
+  tick();
+}
+
+// ---------------------------------------------------------------------------
+// Command handler
+// ---------------------------------------------------------------------------
+
+function handleCommand(type: AgentCommandType | string, data: Record<string, string>): void {
   switch (type) {
     case 'pause':
-      console.log('[COMMANDS] -> Executing PAUSE');
+      console.log('[COMMANDS] -> PAUSE');
       setStatus('paused');
       break;
+
     case 'resume':
-      console.log('[COMMANDS] -> Executing RESUME');
+      console.log('[COMMANDS] -> RESUME');
       setStatus('idle');
       break;
-    case 'kill':
-      console.log('[COMMANDS] -> SHUTTING DOWN (Kill received)');
-      setStatus('dead');
-      setTimeout(() => process.exit(0), 500);
+
+    case 'cancel_task':
+      console.log('[COMMANDS] -> CANCEL current task');
+      taskExecutor.cancelCurrentTask();
       break;
-    case 'restart':
-      console.log('[COMMANDS] -> RESTARTING');
-      setStatus('degraded');
-      setTimeout(() => process.exit(0), 500);
+
+    case 'reassign_task': {
+      const payload = JSON.parse(data.payload || '{}');
+      console.log('[COMMANDS] -> REASSIGN task', payload);
+      taskExecutor.cancelCurrentTask();
+      // The control plane will re-queue the task for another agent
       break;
+    }
+
+    case 'update_config': {
+      const payload = JSON.parse(data.payload || '{}');
+      console.log('[COMMANDS] -> CONFIG UPDATE:', payload);
+      // Future: apply config changes to executor, heartbeat interval, etc.
+      break;
+    }
+
     case 'force_sync':
-      console.log('[COMMANDS] -> Force sync requested');
-      // TODO: pull latest config from control plane
+      console.log('[COMMANDS] -> FORCE SYNC');
+      // Future: pull latest config/state from control plane
       break;
+
     case 'graceful_shutdown':
-      console.log('[COMMANDS] -> Graceful shutdown — finishing current task');
+      console.log('[COMMANDS] -> GRACEFUL SHUTDOWN — finishing current task then exiting');
+      taskExecutor.stop();
       setStatus('paused');
       setTimeout(() => {
-        console.log('[COMMANDS] -> Graceful shutdown complete');
+        console.log('[COMMANDS] Graceful shutdown complete.');
         process.exit(0);
       }, 5000);
       break;
-    case 'cancel_task':
-      console.log('[COMMANDS] -> Cancelling current task');
-      setStatus('idle');
+
+    case 'kill':
+      console.log('[COMMANDS] -> KILL — immediate shutdown');
+      setStatus('dead');
+      setTimeout(() => process.exit(0), 500);
       break;
-    case 'update_config': {
-      const payload = JSON.parse(data.payload || '{}');
-      console.log('[COMMANDS] -> Config update received:', payload);
+
+    case 'restart':
+      console.log('[COMMANDS] -> RESTART');
+      setStatus('degraded');
+      setTimeout(() => process.exit(0), 500);
       break;
-    }
+
     default:
       console.warn(`[COMMANDS] Unknown command type: ${type}`);
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Acknowledge a command back to the API
+// ---------------------------------------------------------------------------
+
+async function acknowledgeCommand(commandId: string): Promise<void> {
+  try {
+    await fetch(`${API_URL}/api/commands/${commandId}/ack`, {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        agentId: AGENT_ID,
+        acknowledgedAt: new Date().toISOString(),
+      }),
+    });
+  } catch {
+    // Best-effort acknowledgement — don't crash if API is unreachable
   }
 }

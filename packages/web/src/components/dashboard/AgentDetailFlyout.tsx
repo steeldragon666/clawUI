@@ -4,6 +4,7 @@ import { useAgentCommand } from '../../hooks/useAgentCommand';
 import { useTaskStore } from '../../stores/taskStore';
 import { motion } from 'framer-motion';
 import { Sparkline } from '../charts/Sparkline';
+import { SessionWaterfall } from './SessionWaterfall';
 import { X } from 'lucide-react';
 
 const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001';
@@ -197,13 +198,7 @@ export function AgentDetailFlyout({ agent, onClose }: Props) {
           )}
 
           {tab === 'log' && (
-            <div className="bg-[#0c0c14] font-mono text-[11px] leading-5 p-3 h-full overflow-y-auto custom-scrollbar">
-              {MOCK_LOG_LINES.map((line, i) => (
-                <div key={i} className={`${line.includes('[WARN]') ? 'text-neon-amber' : line.includes('[ERROR]') ? 'text-neon-magenta' : 'text-neon-green/80'}`}>
-                  {line}
-                </div>
-              ))}
-            </div>
+            <SessionWaterfall agentId={agent.id} agentName={agent.name} />
           )}
 
           {tab === 'tasks' && (

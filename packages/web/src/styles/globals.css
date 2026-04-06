@@ -2,63 +2,79 @@
 @import './animations.css';
 
 @theme {
-  /* Background */
-  --color-void: #0a0a0f;
-  --color-panel: rgba(18, 18, 31, 0.8);
-  --color-card: #12121f;
-  --color-card-hover: #1a1a2e;
+  /* Background — OLED-optimized depth system */
+  --color-void: #050508;
+  --color-panel: rgba(14, 14, 24, 0.85);
+  --color-card: #0e0e18;
+  --color-card-hover: #161624;
+  --color-surface-elevated: #1a1a2e;
 
   /* Borders */
   --color-border-subtle: rgba(255, 255, 255, 0.06);
   --color-border-glow: rgba(0, 240, 255, 0.3);
+  --color-border-active: rgba(0, 240, 255, 0.15);
 
-  /* Neon accents */
-  --color-neon-cyan: #00f0ff;
-  --color-neon-magenta: #ff00aa;
-  --color-neon-green: #00ff88;
-  --color-neon-amber: #ffaa00;
-  --color-neon-red: #ff2244;
+  /* Neon accents — refined for OLED contrast */
+  --color-neon-cyan: #00e5ff;
+  --color-neon-magenta: #ff0080;
+  --color-neon-green: #00ff6a;
+  --color-neon-amber: #ffb300;
+  --color-neon-red: #ff1744;
+  --color-neon-blue: #0088ff;
 
-  /* Text */
-  --color-primary: #e0e0e8;
-  --color-secondary: #6a6a7a;
-  --color-muted: #334455;
+  /* Text — AAA contrast ratios on OLED black */
+  --color-primary: #e8e8f0;
+  --color-secondary: #6b6b8a;
+  --color-muted: #3a3a55;
 
-  /* Typography */
-  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
-  --font-sans: 'Inter', system-ui, sans-serif;
+  /* Typography — 3-tier system */
+  --font-hud: 'Share Tech Mono', 'Courier New', monospace;
+  --font-mono: 'Fira Code', 'JetBrains Mono', monospace;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
 
-  /* Shadows (neon glow) */
-  --shadow-cyan: 0 0 10px rgba(0, 240, 255, 0.3), 0 0 20px rgba(0, 240, 255, 0.15), 0 0 30px rgba(0, 240, 255, 0.08);
-  --shadow-magenta: 0 0 10px rgba(255, 0, 170, 0.3), 0 0 20px rgba(255, 0, 170, 0.15), 0 0 30px rgba(255, 0, 170, 0.08);
-  --shadow-green: 0 0 10px rgba(0, 255, 136, 0.3), 0 0 20px rgba(0, 255, 136, 0.15), 0 0 30px rgba(0, 255, 136, 0.08);
-  --shadow-amber: 0 0 10px rgba(255, 170, 0, 0.3), 0 0 20px rgba(255, 170, 0, 0.15), 0 0 30px rgba(255, 170, 0, 0.08);
-  --shadow-red: 0 0 10px rgba(255, 34, 68, 0.3), 0 0 20px rgba(255, 34, 68, 0.15), 0 0 30px rgba(255, 34, 68, 0.08);
+  /* Elevation shadows — depth system */
+  --shadow-elevation-1: 0 1px 3px rgba(0, 0, 0, 0.5), 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-elevation-2: 0 4px 6px rgba(0, 0, 0, 0.5), 0 2px 4px rgba(0, 0, 0, 0.4);
+  --shadow-elevation-3: 0 10px 20px rgba(0, 0, 0, 0.5), 0 3px 6px rgba(0, 0, 0, 0.4);
+  --shadow-elevation-4: 0 15px 40px rgba(0, 0, 0, 0.6), 0 5px 10px rgba(0, 0, 0, 0.5);
+
+  /* Neon glow — refined multi-layer */
+  --shadow-cyan: 0 0 8px rgba(0, 229, 255, 0.25), 0 0 20px rgba(0, 229, 255, 0.12), 0 0 40px rgba(0, 229, 255, 0.06);
+  --shadow-magenta: 0 0 8px rgba(255, 0, 128, 0.25), 0 0 20px rgba(255, 0, 128, 0.12), 0 0 40px rgba(255, 0, 128, 0.06);
+  --shadow-green: 0 0 8px rgba(0, 255, 106, 0.25), 0 0 20px rgba(0, 255, 106, 0.12), 0 0 40px rgba(0, 255, 106, 0.06);
+  --shadow-amber: 0 0 8px rgba(255, 179, 0, 0.25), 0 0 20px rgba(255, 179, 0, 0.12), 0 0 40px rgba(255, 179, 0, 0.06);
+  --shadow-red: 0 0 8px rgba(255, 23, 68, 0.25), 0 0 20px rgba(255, 23, 68, 0.12), 0 0 40px rgba(255, 23, 68, 0.06);
 }
 
-/* Base */
+/* ─── Base ─────────────────────────────────────────────────────────────── */
+
 body {
   background-color: var(--color-void);
   color: var(--color-primary);
   font-family: var(--font-sans);
   margin: 0;
-  overflow: hidden; /* No scroll on 50" display */
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
-/* Grid underlay */
+/* ─── Grid underlay ───────────────────────────────────────────────────── */
+
 body::before {
   content: '';
   position: fixed;
   inset: 0;
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
-  background-size: 20px 20px;
+    linear-gradient(rgba(0, 229, 255, 0.015) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 229, 255, 0.015) 1px, transparent 1px);
+  background-size: 24px 24px;
   pointer-events: none;
   z-index: 0;
 }
 
-/* Scanline overlay */
+/* ─── Scanline overlay ────────────────────────────────────────────────── */
+
 .scanlines::after {
   content: '';
   position: absolute;
@@ -67,28 +83,39 @@ body::before {
     0deg,
     transparent,
     transparent 2px,
-    rgba(0, 0, 0, 0.04) 2px,
-    rgba(0, 0, 0, 0.04) 4px
+    rgba(0, 0, 0, 0.03) 2px,
+    rgba(0, 0, 0, 0.03) 4px
   );
   pointer-events: none;
   z-index: 10;
 }
 
-/* Glass panel */
+/* ─── Glass panel — premium depth ─────────────────────────────────────── */
+
 .glass-panel {
   background: var(--color-panel);
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(16px) saturate(150%);
+  -webkit-backdrop-filter: blur(16px) saturate(150%);
   border: 1px solid var(--color-border-subtle);
-  border-radius: 4px;
+  border-radius: 6px;
   position: relative;
   overflow: hidden;
+  box-shadow: var(--shadow-elevation-1);
+  transition: border-color 200ms ease, box-shadow 200ms ease;
 }
 
 .glass-panel:hover {
-  border-color: var(--color-border-glow);
+  border-color: var(--color-border-active);
+  box-shadow: var(--shadow-elevation-2);
 }
 
-/* HUD corner brackets */
+.glass-panel:focus-within {
+  border-color: var(--color-border-glow);
+  box-shadow: var(--shadow-elevation-2), var(--shadow-cyan);
+}
+
+/* ─── HUD corner brackets — refined ──────────────────────────────────── */
+
 .hud-corners {
   position: relative;
 }
@@ -97,11 +124,17 @@ body::before {
 .hud-corners::after {
   content: '';
   position: absolute;
-  width: 12px;
-  height: 12px;
+  width: 14px;
+  height: 14px;
   border-color: var(--color-neon-cyan);
   border-style: solid;
-  opacity: 0.5;
+  opacity: 0.4;
+  transition: opacity 300ms ease;
+}
+
+.hud-corners:hover::before,
+.hud-corners:hover::after {
+  opacity: 0.7;
 }
 
 .hud-corners::before {
@@ -116,19 +149,22 @@ body::before {
   border-width: 0 2px 2px 0;
 }
 
-/* Neon glow utilities */
+/* ─── Neon glow utilities ─────────────────────────────────────────────── */
+
 .glow-cyan { box-shadow: var(--shadow-cyan); }
 .glow-magenta { box-shadow: var(--shadow-magenta); }
 .glow-green { box-shadow: var(--shadow-green); }
 .glow-amber { box-shadow: var(--shadow-amber); }
 .glow-red { box-shadow: var(--shadow-red); }
 
-/* Status indicator dot */
+/* ─── Status indicator dots ───────────────────────────────────────────── */
+
 .status-dot {
   width: 8px;
   height: 8px;
   border-radius: 50%;
   display: inline-block;
+  flex-shrink: 0;
 }
 
 .status-dot--working { background: var(--color-neon-cyan); box-shadow: var(--shadow-cyan); }
@@ -138,8 +174,68 @@ body::before {
 .status-dot--unreachable, .status-dot--dead { background: var(--color-neon-red); animation: flatline 2s linear infinite; }
 .status-dot--paused { background: var(--color-secondary); }
 
-/* Tabular numbers for metrics */
+/* ─── Tabular numbers ─────────────────────────────────────────────────── */
+
 .tabular-nums {
   font-variant-numeric: tabular-nums;
   font-family: var(--font-mono);
+}
+
+/* ─── HUD font (for panel headers, nav labels) ────────────────────────── */
+
+.font-hud {
+  font-family: var(--font-hud);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+/* ─── Premium focus rings ─────────────────────────────────────────────── */
+
+:focus-visible {
+  outline: 2px solid var(--color-neon-cyan);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* ─── Scrollbar styling ───────────────────────────────────────────────── */
+
+.custom-scrollbar::-webkit-scrollbar { width: 4px; height: 4px; }
+.custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+.custom-scrollbar::-webkit-scrollbar-thumb { background: rgba(0, 229, 255, 0.15); border-radius: 2px; }
+.custom-scrollbar::-webkit-scrollbar-thumb:hover { background: rgba(0, 229, 255, 0.35); }
+
+/* Firefox */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 229, 255, 0.15) transparent;
+}
+
+/* ─── Elevation utilities ─────────────────────────────────────────────── */
+
+.elevation-1 { box-shadow: var(--shadow-elevation-1); }
+.elevation-2 { box-shadow: var(--shadow-elevation-2); }
+.elevation-3 { box-shadow: var(--shadow-elevation-3); }
+.elevation-4 { box-shadow: var(--shadow-elevation-4); }
+
+/* ─── Reduced motion ──────────────────────────────────────────────────── */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .scanlines::after {
+    display: none;
+  }
+}
+
+/* ─── Selection styling ───────────────────────────────────────────────── */
+
+::selection {
+  background: rgba(0, 229, 255, 0.25);
+  color: var(--color-primary);
 }

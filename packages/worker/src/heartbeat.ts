@@ -1,26 +1,36 @@
 import os from 'os';
 import type { HeartbeatPayload } from '@omniscient/shared';
-import { AGENT_ID, SERVER_ID, TENANT_ID, currentStatus } from './index';
+import { AGENT_ID, SERVER_ID, TENANT_ID, getHeartbeatStatus, API_URL } from './index.js';
 
-const API_URL = process.env.CONTROL_PLANE_URL || 'http://localhost:3001';
-
+/**
+ * HeartbeatEngine sends periodic heartbeats to the control plane API.
+ * Collects real CPU and memory metrics from the OS.
+ * Gracefully handles unreachable API — logs a warning and retries next interval.
+ */
 export class HeartbeatEngine {
   private timer: NodeJS.Timeout | null = null;
-  private intervalMs = 15000;
-  
-  // Fake telemetry state
+  private intervalMs = 30_000; // 30 seconds per spec
+
+  /** Monotonic task counter — only incremented via incrementTaskCounter() */
   public taskCounter = 0;
   public queueDepth = 0;
   public currentTaskId: string | null = null;
 
+  /** Previous CPU snapshot for delta-based CPU usage calculation */
+  private prevCpuTimes: { idle: number; total: number } | null = null;
+
+  /** Increment the monotonic task counter (called on each task completion) */
+  incrementTaskCounter() {
+    this.taskCounter++;
+  }
+
   start() {
     if (this.timer) return;
-    console.log(`[HEARTBEAT] Engine started. Pinging ${API_URL} every ${this.intervalMs}ms`);
-    
-    // Initial ping
+    console.log(`[HEARTBEAT] Engine started. Interval: ${this.intervalMs}ms -> POST ${API_URL}/api/heartbeat`);
+
+    // Send immediately on start
     this.sendPing();
-    
-    // Loop
+
     this.timer = setInterval(() => {
       this.sendPing();
     }, this.intervalMs);
@@ -34,44 +44,76 @@ export class HeartbeatEngine {
     }
   }
 
-  private async sendPing() {
-    // Collect OS level telemetry
+  /** Force an immediate heartbeat (e.g. on status change) */
+  flush() {
+    this.sendPing();
+  }
+
+  /**
+   * Compute CPU usage as a delta between snapshots.
+   * First call returns instantaneous usage; subsequent calls return usage since last sample.
+   */
+  private getCpuPercent(): number {
     const cpus = os.cpus();
-    const cpuTotal = cpus.reduce((acc: number, cpu) => {
-      const times = Object.values(cpu.times) as number[];
-      const total = times.reduce((a: number, b: number) => a + b, 0);
-      return acc + (total - cpu.times.idle) / total;
-    }, 0);
-    const cpuPercent = Math.round((cpuTotal / cpus.length) * 100);
-    
-    const usedMem = os.totalmem() - os.freemem();
-    const memoryPercent = Math.round((usedMem / os.totalmem()) * 100);
+    let idleTotal = 0;
+    let grandTotal = 0;
+
+    for (const cpu of cpus) {
+      const times = cpu.times;
+      idleTotal += times.idle;
+      grandTotal += times.user + times.nice + times.sys + times.idle + times.irq;
+    }
+
+    if (this.prevCpuTimes) {
+      const idleDelta = idleTotal - this.prevCpuTimes.idle;
+      const totalDelta = grandTotal - this.prevCpuTimes.total;
+      this.prevCpuTimes = { idle: idleTotal, total: grandTotal };
+
+      if (totalDelta === 0) return 0;
+      return Math.round(((totalDelta - idleDelta) / totalDelta) * 100);
+    }
+
+    // First sample — compute instantaneous
+    this.prevCpuTimes = { idle: idleTotal, total: grandTotal };
+    if (grandTotal === 0) return 0;
+    return Math.round(((grandTotal - idleTotal) / grandTotal) * 100);
+  }
+
+  private getMemoryPercent(): number {
+    const used = os.totalmem() - os.freemem();
+    return Math.round((used / os.totalmem()) * 100);
+  }
+
+  private async sendPing() {
+    const cpuPercent = this.getCpuPercent();
+    const memoryPercent = this.getMemoryPercent();
 
     const payload: HeartbeatPayload = {
       agentId: AGENT_ID,
       serverId: SERVER_ID,
       tenantId: TENANT_ID,
-      status: currentStatus,
+      status: getHeartbeatStatus(),
       cpuPercent,
       memoryPercent,
       taskCounter: this.taskCounter,
       queueDepth: this.queueDepth,
       currentTaskId: this.currentTaskId,
-      timestamp: new Date().toISOString()
+      timestamp: new Date().toISOString(),
     };
 
     try {
       const res = await fetch(`${API_URL}/api/heartbeat`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload)
+        body: JSON.stringify(payload),
       });
-      
+
       if (!res.ok) {
-        console.warn(`[HEARTBEAT] Failed with status: ${res.status}`);
+        console.warn(`[HEARTBEAT] API responded with status ${res.status}`);
       }
     } catch (err) {
-      console.error(`[HEARTBEAT] Network error sending ping to Control Plane:`, (err as Error).message);
+      // Graceful: log and retry next interval — do not crash
+      console.warn(`[HEARTBEAT] API unreachable (${(err as Error).message}). Will retry in ${this.intervalMs / 1000}s.`);
     }
   }
 }
