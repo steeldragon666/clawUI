@@ -166,7 +166,7 @@ const fadeIn = {
   visible: (i: number) => ({
     opacity: 1,
     y: 0,
-    transition: { delay: i * 0.02, duration: 0.25, ease: 'easeOut' },
+    transition: { delay: i * 0.02, duration: 0.25, ease: 'easeOut' as const },
   }),
 };
 
@@ -175,7 +175,7 @@ const slideIn = {
   visible: {
     opacity: 1,
     x: 0,
-    transition: { duration: 0.3, ease: 'easeOut' },
+    transition: { duration: 0.3, ease: 'easeOut' as const },
   },
 };
 
